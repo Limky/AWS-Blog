@@ -15,20 +15,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class AndroidController {
+public class AwsController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(AndroidController.class);
+	private static final Logger logger = LoggerFactory.getLogger(AwsController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/android", method = RequestMethod.GET)
+	@RequestMapping(value = "/aws", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome Andorid! The client locale is {}.", locale);
 		
-		System.out.println("/android 컨트롤러");
+		System.out.println("/aws 컨트롤러");
 		
-		return "android";
+		return "aws";
 	}
 	
 }

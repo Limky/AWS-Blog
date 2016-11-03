@@ -12,6 +12,28 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="/resources/assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/resources/assets/css/ie9.css" /><![endif]-->
 	</head>
+	<script type="text/javascript">
+	
+
+	</script>
+	<style>
+		table {
+	    font-family: arial, sans-serif;
+	    border-collapse: collapse;
+	    width: 100%;
+	}
+	
+	td, th {
+	    border: 1px solid #dddddd;
+	    text-align: center;
+	    padding: 8px;
+	}
+	a:HOVER {
+	color: #1A237E;
+	}
+
+	</style>
+	
 	<body>
 		<div id="page-wrapper">
 
@@ -61,7 +83,7 @@
 								<li><a href="#">서버</a>
 									<ul>
 										<li><a href="#">Linux</a></li>
-										<li><a href="#">AWS</a></li>
+										<li><a href="aws">AWS</a></li>
 										<li><a href="#">Tomcat</a></li>
 										<li><a href="#">NginX</a></li>
 									</ul>
@@ -167,7 +189,30 @@
 				</section>
 
 
-			<!-- Footer -->
+
+		<section class="wrapper style1">
+			<div class="container" style="">
+			<table>
+				<tr>
+					<th style="font-weight: 600;">최근 글</th>
+					<th style="font-weight: 600;">작성 날짜</th>
+				</tr>
+				<tr>
+					<td><a href="#">0. 안드로이드 개발을 시작하며...</a></td>
+					<td>2016-11-02</td>
+
+				</tr>
+				<tr>
+					<td><a href="#">1. 안드로이드 기본 프로젝트 구조</a></td>
+					<td>2016-11-02</td>
+
+				</tr>
+			
+			</table>
+			</div>
+		</section>
+
+		<!-- Footer -->
 				<div id="footer">
 					<div class="container">
 						<div class="row">
@@ -253,6 +298,6 @@
 			<script src="/resources/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/resources/assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/resources/assets/js/main.js"></script>
-
+			<script src="/resources/assets/js/main.js"></script>
 	</body>
 </html>
