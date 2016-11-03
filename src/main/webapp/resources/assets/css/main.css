@@ -2334,10 +2334,13 @@
 /* Header */
 
 	#header {
+	
+/* 		background-image: url("../../images/shot.jpg");
+ */		background-position: center center;
 		text-align: center;
-		padding: 3em 0 0 0;
-		background-color: #fff;
-		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
+ 		padding: 2em 0 0 0; 
+		background-color: #e6e6e6;
+/* 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png"); */
 		background-position: top left,					top left,					top left;
 		background-size: 100% 6em,					100% 6em,					auto;
 		background-repeat: no-repeat,					no-repeat,					repeat;
@@ -2527,7 +2530,7 @@
 	}
 
 		.wrapper.style1 {
-			background-image: url("images/bg02.png");
+		background-color: #fff;
 		}
 
 		.wrapper.style2 {
