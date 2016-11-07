@@ -32,43 +32,12 @@
 
 <body>
 	<div id="page-wrapper">
-
+	
+	
 		<!-- Header -->
-		<div id="header">
+		<jsp:include page="navi.jsp"></jsp:include>
 
-			<!-- Logo -->
-			<h1>
-				<a href="/" id="logo"> Limky <em>의 삽질 블로그</em></a>
-			</h1>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="/">Home</a></li>
-
-					<li><a href="android">모바일</a>
-						<ul>
-							<li><a href="android">Android</a></li>
-							<li><a href="#">ios</a></li>
-						</ul></li>
-					<li><a href="#">웹</a>
-						<ul>
-							<li><a href="#">JSP</a></li>
-							<li><a href="#">Spring</a></li>
-						</ul></li>
-					<li class="current"><a href="#">서버</a>
-						<ul>
-							<li><a href="#">Linux</a></li>
-							<li><a href="#">AWS</a></li>
-							<li><a href="#">Tomcat</a></li>
-							<li><a href="#">NginX</a></li>
-						</ul></li>
-					<li><a href="#">기사</a></li>
-					<li><a href="#">기타</a></li>
-				</ul>
-			</nav>
-
-		</div>
 
 		<!-- Main -->
 		<section class="wrapper style1">
@@ -137,7 +106,7 @@
 						하지만!<br></p> <p class="p_tag_desc_hi">중요한 사실은 포트를 아마존 인스턴스 Security Groups에서 반드시 열어줘야 잘 동작한다. 그 이유는 나의 아마존 인스턴스로 부터 누군가 통신 요청을 하면 반드시
 						아마존에서 중간에 인터셉터를 한 후  나의 인스턴스로 오기 때문에 중간에 거치는 녀석에게 내가 80 포트를 열겠다고 설정해줘야 통신이 된다는 점!!<br><br><br></p>
 			<p class="p_tag_desc">하지만 또 한가지...리눅스 기반에 아마존 인스턴스에 경우 리눅스 자체적으로 보안상 포트번호를 바꿀수 있는 권한을 일반유저에게 주지않는다.<br> 따라서 아무리 일반 유저가 톰캣 server.xml을 바꾸고 난리쳐도 안바뀐다.
-			이때 사용하는 것이</p>  <p class="p_tag_desc_hi">iptable이라는 녀석인데 이거 명령어 하나만 쳐주면 8080 포트를 자동으로 80포트로 포트포워딩이 된다!!<br/>(# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080)</p>
+			이때 사용하는 것이</p>  <p class="p_tag_desc_hi">iptable이라는 녀석인데 이거 명령어 하나만 쳐주면 80 포트를 자동으로 8080포트로 포트포워딩이 된다!!<br/>(# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080)</p>
 	
 				
 					</header>

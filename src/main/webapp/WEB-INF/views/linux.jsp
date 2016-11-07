@@ -15,20 +15,26 @@
 </head>
 
 <style>
-.p-tag-desc {
+.p_tag_desc {
 	font-family: 'Jeju Gothic'; serif;
 	font-size: 15px;
 	margin: 0;
 }
+
+.p_tag_desc_hi{
+	font-family: 'Jeju Gothic'; serif;
+	font-size: 15px;
+	margin: 0;
+	color: black;
+}
+
 </style>
 
 <body>
 	<div id="page-wrapper">
 
-
-		<!-- Header -->
+				<!-- Header -->
 		<jsp:include page="navi.jsp"></jsp:include>
-
 
 
 		<!-- Main -->
@@ -40,22 +46,20 @@
 
 					<article>
 						<header>
-							<h2>0. 안드로이드 개발을 시작하며...</h2>
-							<p>2016-11-02</p>
+							<h2>0. Linux를 시작하며...</h2>
+							<p>2016-11-03</p>
 						</header>
 
 						<span class=""><img
-							src="/resources/images/android/android_top_img.png" alt=""
-							width="250px" height="250px" style="margin: 0 auto;" /></span>
+							src="/resources/images/linux/linux.gif" width="550px" height="400px" alt="" style="margin: 0 auto;" /></span>
 
-						<p class="p-tag-desc" style="margin-top: 20px">
-							필자는 웹에 대한 개발과 공부를 먼저 시작했고, 안드로이드에 대해 개인적으로 늦게 관심을 가졌다고 생각한다. <br>따라서
-							안드로이드에 관한 깊은 내공이나, 전문적인 지식이 부족할 수 있다. 하지만 나름대로 안드로이드 실무 개발에 투입되면서
-							혼자 느끼고 삽질 했던 수 많은 시간과<br>사수로부터 배웠던 소중한 지식을 그냥 흘려두기 아까워 이렇게
-							스크랩하고자 한다. <br> 스크랩의 전체적인 내용은 안드로이드 개발을 처음 시작하는 초심자를 위한 수준의
-							글일 것이다.( 나도 초심자이기 때문에...^^ ) <br>아무튼 이 글로 인해 초심자들이 안드로이드가 더
-							재미있어지고, 더 즐겁게 개발 할 수 있으면 좋겠다. <br>(부족한 점이 있으면 언제든 조언은 언제든
-							환영이다~)
+						<p class="p_tag_desc" style="margin-top: 20px">
+							개발자의 내공은 리눅스를 얼마나 잘 다루는지에서 부터 나온다고들 한다. 다른 선배 개발자 분들을 보면 적어도 리눅스의 기본적인 명령어라도 알고있으라고 조언한다~ 그만큼
+							개발을 하다보면 윈도우 환경이 아닌 리눅스와 같은 환경에서 개발할 일들이 많다는 거!! 서버개발자가 아니여도 리눅스의 기본적인 명령어를 어느정도 할 줄 알면 개발자로서 큰 도움이 될거라고 생각한다.
+							이제 마우스 필요없이 키보드만 있으면 된다...!<br/><br/><br/>
+							
+							리눅스 필수 명령어<br/>
+							<a href="http://www.emh.co.kr/content.pl?linux_basic_commands">http://www.emh.co.kr/content.pl?linux_basic_commands</a>
 						</p>
 
 					</article>
@@ -74,46 +78,18 @@
 
 					<article>
 						<header>
-							<h2>1. 안드로이드 기본 프로젝트 구조</h2>
-							<p>2016-11-02</p>
-							<p class="p-tag-desc">보통 안드로이드 스튜디오에서 프로젝트를 생성하면 Java,XML,Gradle,AndroidManifest등 을 포함한 프로젝트 구조를 갖게된다.<br> 각 요소들이 어떤 역할을 하는지 알아보자.
+							<h2>1. 리눅스 포트 포트포워딩</h2>
+							<p>2016-11-03</p>
+							<p class="p_tag_desc">리눅스는 보안상 슈퍼유저 권한이 아닌 일반유저에게 포트포워딩 권한을 주지않는다. 따라서 iptable이라는 녀석을 통해 포트포워딩 해준다.<br>
 						</p>
 						</header>
+						<p class="p_tag_desc">(# iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080)<br>이제 80 포트로 요청을 받으면 자연스럽게 8080으로 포워딩 해준다.<br><br>
+						포트포워딩에 개념에 대해 설명해 놓은 곳<br><a href="http://storytown.tistory.com/14">http://storytown.tistory.com/14</a></p>
 
 						<span class=""><img
-							src="/resources/images/android/Android_1_1-2.JPG" alt="" style="margin: 20px auto;" /></span>
-						<ul>
-							<li><h4 style="margin-top: 20px">1. AndroidManifest.xml</h4></li>
-							<li><p class="p-tag-desc">*보통 매니페스트라고 부르며, 앱의 구성요소나 권한등의 정보를 설정하고 정의함!</p></li>
-							<li><p class="p-tag-desc">*앱에 대한 정보를 담고있음. 여기서 특히 앱 권한을 부여한다는 점을 꼭 기억</p></li>
-							<li><p class="p-tag-desc"></p></li>
-						</ul>
-		
-						<ul>
-							<li><h4 style="margin-top: 20px">2. /java</h4></li>
-							<li><p class="p-tag-desc">*자바 소스 파일이 들어있는 폴더로 [/app/src/main]폴더 안에 있음</p></li>
-							<li><p class="p-tag-desc">*표준 자바와 마찬가지로 패키지명과 동일한 하위 폴더들이 만들어짐</p></li>
-							<li><p class="p-tag-desc">*쉽게 생각해서 앱 UI를 동적으로 처리,컨트롤하고 앱의 백단 뒤에서 전반적인 처리를 함</p></li>
-						</ul>
-		
-						<ul>
-							<li><h4 style="margin-top: 20px">3. /res</h4></li>
-							<li><p class="p-tag-desc">*리소스 파일이 들어있는 폴더로 [app/src/main] 폴더 안에 있음</p></li>
-							<li><p class="p-tag-desc">*XML 레이아웃,그림 파일,문자열을 정의한 XML 파일 등이 들어있는데 각 파일의 유형에 따른 하위 폴더들이 만들어져 있음</p></li>
-							<li><p class="p-tag-desc">(레이아웃 파일[/res/layout], 그림 파일[/res/drawable], 문자열을 정의한 XML 파일[/res/values])</p></li>
-						</ul>
-						
-						<ul>
-							<li><h4 style="margin-top: 20px">4. /gradle</h4></li>
-							<li><p class="p-tag-desc">*개발환경이 자동으로 만들어 내는 소스 파일이 들어가는 폴더</p></li>
-							<li><p class="p-tag-desc">*안드로이드 각종 라이브러리를 추가할 수 있음</p></li>
-							<li><p class="p-tag-desc">*안드로이드 빌드,타켓 버전 등을 설정할 수 있음</p></li>
-						</ul>
-		
-					<header>
-						<p class="p-tag-desc">간략하게 설명했지만, 보통 이정도만 알아도 처음 프로젝트 개발을 하는데 있어 막히진 않을 것이다.<br>
-						 안드로이드 프로젝트 구조를 큰 맥락에서 이해하는 것에 도움이 되길 바라며...</p>
-					</header>
+						src="/resources/images/linux/port_forwarding.jpg" width="450px" height="320px" alt="aws_port_open" style="margin: 20px auto;" /></span>
+			
+			
 					</article>
 
 				</div>

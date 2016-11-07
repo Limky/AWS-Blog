@@ -12,9 +12,9 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="/resources/assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/resources/assets/css/ie9.css" /><![endif]-->
 	</head>
-	<script type="text/javascript">
 	
-	</script>
+	
+
 	<style>
 		table {
 	    font-family: arial, sans-serif;
@@ -30,18 +30,17 @@
 	a:HOVER {
 	color: #1A237E;
 	}
+
 	</style>
 	
 	<body>
 		<div id="page-wrapper">
-
-
-
-		<!-- Header -->
+		
+		<!-- 헤더 부분 JSP 액션태그로 포함 -->
 		<jsp:include page="navi.jsp"></jsp:include>
 
 
-
+	
 			<!-- Banner -->
 				<section id="banner">
 					<header>
@@ -236,15 +235,15 @@
 
 				</div>
 
-		</div>
-
-		<!-- Scripts -->
-			<script src="/resources/assets/js/jquery.min.js"></script>
-			<script src="/resources/assets/js/jquery.dropotron.min.js"></script>
-			<script src="/resources/assets/js/skel.min.js"></script>
-			<script src="/resources/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/resources/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/resources/assets/js/main.js"></script>
+	</div>
+		
+	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
