@@ -66,7 +66,7 @@
 		
 		
 		
-		<section class="wrapper style1" style="margin-top:60px">
+		<section class="wrapper style1" style="margin-top:20px">
 			<div class="container">
 				<div id="content">
 
@@ -116,6 +116,45 @@
 					</header>
 					</article>
 
+				</div>
+			</div>
+		</section>
+		
+		
+		
+			<section class="wrapper style1" style="margin-top:20px">
+			<div class="container">
+				<div id="content">
+
+					<!-- Content -->
+
+					<article>
+						<header>
+							<h2>2. 안드로이드 네트워크 작업시 주의해야 할 점</h2>
+							<p>2016-11-02</p>
+							<p class="p-tag-desc">안드로이드에서 예를 들어 외부에 있는 어플리케이션이나 서버로부터 대용량 또는 지속적인 통신을 통해 데이터를 주고받을 때 주의할 점!!<br>
+						필자는 웹 URL을 통해 대용량 이미지를 다운받고자 했는데 어쩐일인지 자꾸 앱이 뻥나는(앱이 종료..ㅎ) 현상이 발생했다.<br></p>
+					</header>
+					
+					<p class="p-tag-desc">
+					그 이유는 안드로이드는 기본적으로 Main 이라는 스레드가 주로 돌고있는데,<br> 웹이나 서버를 통해 네트워크 작업을 실시할 때도 무리하게 Main 스레드를 사용하면...과부하가 걸려 앱이 뻥난다.</br>
+					따라서 메인스레드 대신 새로운 스레드를 생성해서 네트워크 작업을 위임하는 것이 좋은 자세이다.<br><br></p>
+					
+						<p class="p-tag-desc">우리는 AsyncTask라는 놈을 클래스 상속받아 네트워크 작업을 일임할것이다.
+						<br>AsyncTask를 모르면 아래를 참고!!<br> 
+						<a href="http://itmining.tistory.com/7">http://itmining.tistory.com/7</a> </p>
+			
+			
+						<span class=""><img
+							src="" alt="" style="margin: 20px auto;" /></span>
+						
+					<header>
+						<p class="p-tag-desc">혹 안드로이드(모바일이기 때문에 더 메모리와 OS관리가 중요..)가 아닌 다른 개발을 하더라도 항상 과부하가 될 가능성,<br> 과부하를 해소할 해결책 등을 생각하면서 개발하는 것이 좋은 자세이다.<br>
+						그렇다고 너무 많은 스레드를 생성하면 곤란하다. 항상 과유불급을 생각하자</p>
+					</header>
+					
+					</article>
+			
 				</div>
 			</div>
 		</section>
