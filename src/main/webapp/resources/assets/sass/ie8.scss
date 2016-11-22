@@ -1,42 +1,13 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	Arcana by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	textarea {
-		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-	}
-
-/* Image */
-
-	.image {
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		img {
-			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
-	}
-
-/* Icon */
-
-	.icon {
-		&.major {
-			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
-	}
 
 /* Button */
 
@@ -48,32 +19,69 @@
 		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Box */
+/* Form */
 
-	.box {
-		&.post {
-			.inner {
-				margin-left: 35%;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: _size(element-height);
+		line-height: _size(element-height);
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		& + label {
+			&:before {
+				display: none;
 			}
 		}
 	}
 
-/* Dropotron */
+/* Image */
 
-	.dropotron {
+	.image {
+		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&:before, &:after {
+			display: none !important;
+		}
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
 	}
 
-/* Banner */
+/* Header */
 
-	#banner {
+	#header {
+		background-image: url('../../images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		h1 {
+			color: _palette(accent2, fg-bold);
+		}
 	}
 
-/* Wrapper */
+/* Footer */
 
-	.wrapper {
-		&.style2 {
-			background: #fdfdfd url('images/bg01.png');
+	#footer {
+		.icons {
+			a {
+				color: _palette(accent2, fg-bold);
+			}
 		}
 	}
