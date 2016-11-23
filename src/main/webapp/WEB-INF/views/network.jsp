@@ -134,7 +134,7 @@
 							<h3>5. 맥 어드레스</h3>
 						</header>
 						
-						<h5>MAC( Media Access Control )</h5>
+						<h5>MAC ( Media Access Control )</h5>
 						<p>통신을 하기 위해서는 반드시 서로를 구분할 주소가 필요하다. 우리가 생각하는 일반적인 주소는 IP 주소일텐데 이녀석도 결국에는 맥 어드레스를 사용한다.
 						무슨말이냐 하면, IP주소도 결국엔 MAC으로 바꾸는 절차가 있다는 것이다. (IP주소 -> MAC 주소 이과정을 ARP라고함 ARP:Address Resolution Protocol)
 						그래서 MAC은 무엇이냐 MAC은 네트워크에 붙는 각 장비들은 48bit주소를 뜻한다. 이 주소는 랜카드 또는 네트워크 장비에 이미 고정되어 있는 주소이고 전세계에서 유일한 주소이며, 하드웨어의
@@ -159,10 +159,28 @@
 						<header class="major">
 							<h3>6. 유니캐스트,브로드캐스트,멀티캐스트</h3>
 						</header>
-						
-						<h5>MAC( Media Access Control )</h5>
-						<p></p>			
-						<img alt="MacAddress" width="800px" src="/resources/images/network/network_mac_address.png" style="margin-bottom: 20px">
+					
+							<img alt="MacAddress" width="300px" src="/resources/images/network/unicast.png" style="margin-bottom: 20px;">	
+						<h5>유니캐스트 ( Unicast )</h5>
+						<p>유니캐스트는 1:1로 데이터를 전달하는 통신 방식이다. 구체적으로 데이터를 보내는 PC는 자신의 맥어드레스를 적고 받는 쪽 PC의 맥어드레스도 적어 프레임에 감싸 데이터를 전달한다. 그 다음 같은 지역의 로컬 네트워크 환경은 일반적으로 Shared한 통신 방식을 취하기 때문에,
+						  일단 같은 네트워크 서식지에 있는 모든 PC는 프레임 받게된다. 각각의 PC는 받는쪽 맥어드레스와 자신의 랜 카드 맥어드레스를 비교하여, 맥어드레스가 서로 다르다면 CPU에게 보내지 않고 프레임을 폐기처분한다. 만약 맥 어드레스가 같다면 PC는 CPU위에 프레임을 올린다.(브로드캐스트 경우 PC 성능이 떨어질수 있는데, 그 이윤 
+						  모든 프레임을 다 CPU에 올리기 때문이다.)</p>			
+							
+							<img alt="MacAddress" width="300px" src="/resources/images/network/broadcast.png" style="margin-bottom: 20px;">	  
+						  <h5>브로드캐스트 ( BroadCast )</h5>
+						<p>브로드캐스트는 같은 네트워크 서식지에 있는 모든 PC들에게 데이터를 주는 방식이다. 즉 패킷,프레임을 받는 PC의 맥어드레스 주소가 실제 프레임에 적혀있는 맥 어드레스와 일치하지 않더라도 폐기하지 않고 CPU에게 인터럽트를 걸고 우선적으로 받은 패킷을 처리하게한다.
+						즉 자신의 랜카드 맥어드레스 주소와 일치하지 않는 패킷을 받더라도 PC는 CPU에게 패킷을 처리하게 시킨다. 따라서 너무 많은 브로드캐스트는 같은 서식지의 네트워크에 많은 노드를 발생시켜 혼잡을 야기하며, 그 안에 거주하는 PC의 CPU에 성능을 저하시킬 수 있다. 그럼 보통 이 브로드캐스트를 왜 이용할까?
+						만약 받는 PC의 MAC주소는 모르고 IP주소만 알고있을 때 받는 PC의 MAC주소를 알기 위해 브로드캐스트를 날린다. 즉 같은 네트워크 안에서 "다들 들으세요 여기 이런IP주소 가진 PC있으면 알려줘!" 라고 외친다. 그럼 해당 PC는 자신의 MAC주소를 전달해준다. 결국 IP주소를 MAC주소로 바꾸는 과정 ,얻어내는 과정 이를 ARP(Address Resolution Protocol)이라고 한다.
+						그 외에도 서버가 다수의 클라이언트에게 서비스하기위해서 브로드 캐스트는 사용된다. </p>		
+				
+					<img alt="MacAddress" width="300px" src="/resources/images/network/multicast.png" style="margin-bottom: 20px;">			  
+						<h5>멀티캐스트 ( Multicast )</h5>
+						<p>멀티캐스트는 200명에 사용자가 있는 네트워크에서 150명의 사용자에게만 데이터를 주고싶을 때 사용합니다. 즉 특정 그룹에게 데이터를 보내는 방식입니다.
+						유니캐스트로 150명에게 각각 150번씩 보낼 수있지만 이것은 서버에게 미친짓입니다. 브로드캐스트로 한번에 때릴 수도있지만, 이것역시 50명에겐 불필요한 데이터를 주어 CPU에 영향을 줍니다.
+						따라서 멀티캐스를 사용해야하는데 멀티캐스트는 라우터와 스위치가 멀티캐스트지원을 해줘야 가능합니다.( 지원하지 않는 라우터는 멀티캐스트를 브로드캐스트마냥 무조건 버립니다. 라우터는 기본적으로 브로드캐스트를 막는 성질이있습니다. 지원하지 않는 스위치는 멀티캐스트를 브로드캐스트마냥 모든 포트에게 전부 뿌려줍니다.)</p>			
+						 
+						  
+					
 				
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
