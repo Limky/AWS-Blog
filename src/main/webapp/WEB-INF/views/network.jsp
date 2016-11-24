@@ -12,18 +12,7 @@
 	</head>
 	<body id="top">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="/resources/images/main/faceImage2.jpg" alt="" /></a>
-					<h1><strong>I am Limky</strong>&nbsp; &nbsp;<a href="http://html5up.net">My GitHub</a><br /><br/>
-					<a href="http://html5up.net">Android</a>&nbsp; &nbsp;<a href="http://html5up.net">JSP</a> &nbsp; &nbsp;
-					<a href="http://html5up.net">Spring</a> &nbsp; &nbsp;<a href="http://html5up.net">MySQL</a>
-					 <a href="http://html5up.net">DataBase</a>&nbsp; &nbsp; <a href="http://html5up.net">Network</a>&nbsp; &nbsp;
-					  <a href="http://html5up.net">OS</a> &nbsp; &nbsp;<a href="http://html5up.net">JAVA</a> 
-					  <a href="http://html5up.net">Algorithm</a> &nbsp; &nbsp;<a href="http://html5up.net">linux</a> &nbsp; &nbsp;<a href="http://html5up.net">Aws</a></h1>
-				</div>
-			</header>
+		<jsp:include page="navi.jsp" flush="false"/>
 
 		<!-- Main -->
 			<div id="main">
@@ -249,13 +238,7 @@
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="/resources/assets/js/jquery.min.js"></script>
-			<script src="/resources/assets/js/jquery.poptrox.min.js"></script>
-			<script src="/resources/assets/js/skel.min.js"></script>
-			<script src="/resources/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/resources/assets/js/main.js"></script>
+
 
 	</body>
 </html>

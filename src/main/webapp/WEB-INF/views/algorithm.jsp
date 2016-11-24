@@ -11,27 +11,32 @@
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
 	</head>
 	<body id="top">
-<jsp:include page="navi.jsp" flush="false"/>
 
+	<jsp:include page="navi.jsp" flush="false"/>
 
 		<!-- Main -->
 			<div id="main">
-			
-			<h1 style="color: #004D40">#안드로이드</h1>
+
+			<h1 style="color: #004D40">#알고리즘</h1>
 
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2># 안드로이드<br />
-							나만의 AAR/JAR 만들기</h2>
+							<h3>1. 정렬알고리즘</h3>
 						</header>
-						<p>개발을 하다보면 누군가 만들어 놓은 라이브러리를 사용하는 것이 아닌 내가 직접 라이브러리를 만들어 사용할 일이 생긴다.<br/>
-						따라서 안드로이드 스튜디오에서 내가 만든 프로젝트를 AAR로 만드는 방법을 소개한다.<br/> 
-						<a href="http://flowarc.tistory.com/entry/Android-Studio%EC%97%90%EC%84%9C-%EB%82%98%EB%A7%8C%EC%9D%98-Library-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0">나만의 AAR 만들기</a></p>
+						
+						<h5>인트라넷 ( IntraNet )</h5>
+						<p>내부 네트워크, 인터넷,웹브라우져등과 같은 기능을 회사 내부 업무에서도 사용하자는 것에 초점. 특정 사람에게만 사용할 수 있도록 함 ex ) 사내메일시스템,인사시스템<br/>
+						</p>
+					
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
+	
+	
+	
+	
 	<div class="row"></div>
 				
 
@@ -73,6 +78,9 @@
 						</div>
 					</section>
 
+
+
+
 			
 		<!-- Footer -->
 			<footer id="footer">
@@ -88,6 +96,7 @@
 					</ul>
 				</div>
 			</footer>
+
 
 
 	</body>
