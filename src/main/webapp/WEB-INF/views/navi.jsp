@@ -5,8 +5,8 @@
 			<header id="header">
 				<div class="inner">
 					<a href="/" class="image avatar"><img src="/resources/images/main/faceImage2.jpg" alt="" /></a>
-					<h1><strong>I am Limky</strong>&nbsp; &nbsp;<a href="http://html5up.net">My GitHub</a><br /><br/>
-					<a href="http://html5up.net">Android</a>&nbsp; &nbsp;<a href="http://html5up.net">JSP</a> &nbsp; &nbsp;
+					<h1><strong>I am Limky</strong>&nbsp; &nbsp;<a href="https://github.com/Limky">My GitHub</a><br /><br/>
+					<a href="android">Android</a>&nbsp; &nbsp;<a href="http://html5up.net">JSP</a> &nbsp; &nbsp;
 					<a href="http://html5up.net">Spring</a> &nbsp; &nbsp;<a href="http://html5up.net">MySQL</a>
 					 <a href="http://html5up.net">DataBase</a>&nbsp; &nbsp; <a href="network">Network</a>&nbsp; &nbsp;
 					  <a href="http://html5up.net">OS</a> &nbsp; &nbsp;<a href="http://html5up.net">JAVA</a> 
