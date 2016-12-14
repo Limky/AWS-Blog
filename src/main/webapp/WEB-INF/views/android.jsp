@@ -56,12 +56,12 @@
 			<h3>#AAR파일 import 하기</h3>
 					<p>이제 내가 만들었던 aar이든 누군가 만들었던 aar이든 aar 파일을 안드로이드 스튜디오에 import 하는 방법을 알아보자. <br/>첫번째로 File -> Project Structure 에서 + 버튼을 누르면 ui상으로 import할 종류를 물어본다. aar/jar Package파일을 임포트하기가 보일것이다.<br/></p>
 				<img style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_1.JPG">
-				<img style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_2.JPG">
-				<img style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_3.JPG">
+				<img style="margin-bottom: 20px" width="900px" alt="" src="/resources/images/android/aar_import_2.JPG">
+				<img style="margin-bottom: 20px" width="900px" alt="" src="/resources/images/android/aar_import_3.JPG">
 		<p>클릭하여 aar파일의 위치 경로를 잡아주고 aar파일명을 지어주자. 완료를 한다음 Project Structure 창을 한번 껏다 키면, app프로젝트 아래목록에 내가 지어준 aar파일명이 보일것이다. 그럼 지금까지 잘 된 것이다.</p>
-						<img  style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_4.JPG">
+						<img  style="margin-bottom: 20px" width="900px" alt="" src="/resources/images/android/aar_import_4.JPG">
 						<p>이제 자신의 app프로젝트에서 dependency 탭으로가서 + 버튼을 눌러 module을  import 시키면 모든 작업은 끝난다.</p>
-						<img  style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_5.JPG">
+						<img  style="margin-bottom: 20px"  width="900px" alt="" src="/resources/images/android/aar_import_5.JPG">
 		
 		<p>모든 작업은 끝났다. 이제 aar파일에있는 클래스나,인스턴스 등을 마음껏 사용하면 된다!!
 		</section>

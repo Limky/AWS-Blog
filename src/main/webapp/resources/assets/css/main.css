@@ -2495,7 +2495,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 26%;
 	}
 
 		#header > * {
@@ -2573,7 +2573,7 @@
 /* Main */
 
 	#main {
-		margin-left: 35%;
+		margin-left: 26%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
@@ -2877,7 +2877,7 @@
 
 			#header {
 				padding: 6em 3em 3em 3em;
-				width: 30%;
+				width: 25%;
 			}
 
 				#header h1 {
@@ -2901,7 +2901,7 @@
 		/* Main */
 
 			#main {
-				margin-left: 30%;
+				margin-left: 24%;
 				max-width: none;
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
