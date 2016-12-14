@@ -5,11 +5,11 @@
 			<header id="header">
 				<div class="inner">
 					<a href="/" class="image avatar"><img src="/resources/images/main/faceImage2.jpg" alt="" /></a>
-					<h1><strong>I am Limky</strong>&nbsp; &nbsp;<a href="https://github.com/Limky">My GitHub</a><br /><br/>
+					<h1><strong>I am Limky</strong>&nbsp; &nbsp;<a href="https://github.com/Limky">My GitHub</a><br /><br/>&nbsp;
 					<a href="android">Android</a>&nbsp; &nbsp;<a href="http://html5up.net">JSP</a> &nbsp; &nbsp;
 					<a href="http://html5up.net">Spring</a> &nbsp; &nbsp;<a href="http://html5up.net">MySQL</a>
 					 <a href="http://html5up.net">DataBase</a>&nbsp; &nbsp; <a href="network">Network</a>&nbsp; &nbsp;
-					  <a href="http://html5up.net">OS</a> &nbsp; &nbsp;<a href="http://html5up.net">JAVA</a> 
+					  <a href="http://html5up.net">OS</a> &nbsp; &nbsp;<a href="http://html5up.net">JAVA</a>&nbsp; &nbsp;
 					  <a href="algorithm">Algorithm</a> &nbsp; &nbsp;<a href="http://html5up.net">linux</a> &nbsp; &nbsp;<a href="http://html5up.net">Aws</a></h1>
 				</div>
 			</header>
