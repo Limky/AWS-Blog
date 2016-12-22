@@ -22,14 +22,14 @@ public class NetworkController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/algorithm", method = RequestMethod.GET)
+	@RequestMapping(value = "/network", method = RequestMethod.GET)
 	public String RequestAwsController(Locale locale, Model model) {
 		logger.info("Welcome aws! The client locale is {}.", locale);
 		
 		System.out.println("/algorithm 컨트롤러");
 	
 		
-		return "algorithm";
+		return "network";
 	}
 	
 

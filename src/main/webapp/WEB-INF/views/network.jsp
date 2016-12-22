@@ -3,7 +3,7 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%> 
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
+		<title>Limky</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 		<script src="/resources/assets/js/ie/html5shiv.js"></script> -->

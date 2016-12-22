@@ -15,22 +15,34 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class AlgorithmController {
+public class DataBaseController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ServerController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/algorithm", method = RequestMethod.GET)
-	public String RequestAwsController(Locale locale, Model model) {
+	@RequestMapping(value = "/mysql", method = RequestMethod.GET)
+	public String RequestMysqlController(Locale locale, Model model) {
 		logger.info("Welcome aws! The client locale is {}.", locale);
 		
-		System.out.println("/network 컨트롤러");
+		System.out.println("/mysql 컨트롤러");
 	
 		
-		return "algorithm";
+		return "mysql";
 	}
+	
+	@RequestMapping(value = "/database", method = RequestMethod.GET)
+	public String RequestDataBasesqlController(Locale locale, Model model) {
+		logger.info("Welcome aws! The client locale is {}.", locale);
+		
+		System.out.println("/database 컨트롤러");
+	
+		
+		return "database";
+	}
+	
+
 	
 
 	

@@ -1,6 +1,22 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
+@font-face {
+  font-family: 'Jeju Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../assets/fonts/JejuGothic-Regular.eot);
+  src: url(../../assets/fonts/JejuGothic-Regular.eot?#iefix) format('embedded-opentype'),
+   url(../../assets/fonts/JejuGothic-Regular.eot),
+   url(../../assets/fonts/JejuGothic-Regular.eot?#iefix) format('embedded-opentype'),
+   url(../../assets/fonts/JejuGothic-Regular.woff2) format('woff2'),
+   url(../../assets/fonts/JejuGothic-Regular.woff) format('woff'),
+   url(../../assets/fonts/JejuGothic-Regular.ttf) format('truetype');
+   
+}
+
+
+
 /*
 	Strata by HTML5 UP
 	html5up.net | @ajlkn
@@ -14,8 +30,9 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
+/* 		font: inherit;*/	
+	vertical-align: baseline;
+
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1567,10 +1584,12 @@
 
 	body, input, select, textarea {
 		color: #a2a2a2;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Jeju Gothic', HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif; font-weight:400; color:#fff;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
+		
+
 	}
 
 	a {
@@ -2571,6 +2590,9 @@
 			}
 
 /* Main */
+
+
+
 
 	#main {
 		margin-left: 26%;

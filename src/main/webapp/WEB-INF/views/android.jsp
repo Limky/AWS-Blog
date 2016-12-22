@@ -3,7 +3,7 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <html>
 <head>
-<title>Strata by HTML5 UP</title>
+<title>Limky</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 		<script src="/resources/assets/js/ie/html5shiv.js"></script> -->
@@ -23,7 +23,7 @@
 		<!-- One -->
 		<section id="one">
 			<header class="major">
-				<h3>#안드로이드를 시작하며..</h3>
+				<h3>0. 안드로이드를 시작하며..</h3>
 			</header>
 			<p>
 				필자는 웹에 대한 개발과 공부를 먼저 시작했고, 안드로이드에 대해 개인적으로 늦게 관심을 가졌다고 생각한다. <br>따라서
@@ -44,7 +44,7 @@
 		<!-- One -->
 		<section id="one">
 			<header class="major">
-				<h3>#나만의 AAR/JAR 만들기</h3>
+				<h3>1. 나만의 AAR/JAR 만들기</h3>
 			</header>
 			<p>
 				개발을 하다보면 누군가 만들어 놓은 라이브러리를 사용하는 것이 아닌 내가 직접 라이브러리를 만들어 사용할 일이 생긴다.<br />
@@ -53,7 +53,7 @@
 					AAR 만들기 링크</a>
 			</p>
 			<br/>
-			<h3>#AAR파일 import 하기</h3>
+			<h3>1-1. AAR파일 import 하기</h3>
 					<p>이제 내가 만들었던 aar이든 누군가 만들었던 aar이든 aar 파일을 안드로이드 스튜디오에 import 하는 방법을 알아보자. <br/>첫번째로 File -> Project Structure 에서 + 버튼을 누르면 ui상으로 import할 종류를 물어본다. aar/jar Package파일을 임포트하기가 보일것이다.<br/></p>
 				<img style="margin-bottom: 20px" alt="" src="/resources/images/android/aar_import_1.JPG">
 				<img style="margin-bottom: 20px" width="900px" alt="" src="/resources/images/android/aar_import_2.JPG">
@@ -70,7 +70,7 @@
 		<!-- One -->
 		<section id="one">
 			<header class="major">
-				<h3>#하나의 안드로이드 프로젝트에 또 다른 안드로이드 프로젝트  import 시키기.(multi import project)</h3>
+				<h3>1-3. 하나의 안드로이드 프로젝트에 또 다른 안드로이드 프로젝트  import 시키기.(multi import project)</h3>
 			</header>
 			<p>하나의 안드로이드 프로젝트에서 또 다른 안드로이드 프로젝트를 동시작업 할 경우가 생긴다. 그래야하는 이유는 여러가지 이유가있는데.
 			예를들어 A라는 프로젝트에서 B라는 프로젝트를 참고해서 하나의 어플리케이션이 돌아가는 경우, 기본적으로 import 시킨 AAR파일은 수정할 수 없는 불편함을 극복하기 위해서이다.
@@ -98,7 +98,7 @@
 		<!-- One -->
 		<section id="one">
 			<header class="major">
-				<h3>#안드로이드 기본 프로젝트 구조</h3>
+				<h3>4. 안드로이드 기본 프로젝트 구조</h3>
 			</header>
 			<img src="/resources/images/android/android_project_structure.JPG"
 				alt="" style="margin: 0 auto;" />

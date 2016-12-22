@@ -17,7 +17,7 @@
 		<!-- Main -->
 			<div id="main">
 
-			<h1 style="color: #004D40">#알고리즘</h1>
+			<h1 style="color: #004D40">#자바</h1>
 
 				<!-- One -->
 					<section id="one">
