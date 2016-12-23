@@ -35,9 +35,7 @@
 						<p>인트라넷과 거의 유사하지만, 인트라넷을 그 기업의 종업원 이외에도 협력회사나,고객에게 사용할 수록 있도록 한 점이 가장 큰 차이점<br/>
 						</p>
 						
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+					
 					</section>
 	
 	
@@ -61,9 +59,7 @@
 					    <br/>
 						</p>
 						
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+				
 					</section>
 					
 					
@@ -93,9 +89,7 @@
 					  	<p>네트워킹 방식은 이더넷/토큰링 말고도 FDDI 방식, ATM 방식 도 있다. 기억할 점은 어떤 네트워킹 방식을 사용하느야에 따라 랜카드부터 모든 네트워크 장비들을 다르게 구입해야한다는 사실.</p>
 					  
 					  
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+				
 					</section>
 	
 	
@@ -115,9 +109,7 @@
 						
 						<img alt="UTP" src="/resources/images/network/network_utp.png" style="margin-bottom: 20px">
 				
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+			
 					</section>
 	
 	
@@ -142,9 +134,7 @@
 						<h5>00-60-97-8F-4F-86</h5><p>006097 은 회사가 부여받은 번호. 나머지 0060970000 ~ 006097FFFF 까지는 각 장비를 구분하는 시리얼 넘버의 범위이다. (FF란 16진수로 표현하면 가장 큰 값이다. 십진수로 환산하면 15가 된다.)</p>			
 						<img alt="MacAddress" width="800px" src="/resources/images/network/network_mac_address.png" style="margin-bottom: 20px">
 				
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+			
 					</section>
 	
 	
@@ -173,12 +163,7 @@
 						유니캐스트로 150명에게 각각 150번씩 보낼 수있지만 이것은 서버에게 미친짓입니다. 브로드캐스트로 한번에 때릴 수도있지만, 이것역시 50명에겐 불필요한 데이터를 주어 CPU에 영향을 줍니다.
 						따라서 멀티캐스를 사용해야하는데 멀티캐스트는 라우터와 스위치가 멀티캐스트지원을 해줘야 가능합니다.( 지원하지 않는 라우터는 멀티캐스트를 브로드캐스트마냥 무조건 버립니다. 라우터는 기본적으로 브로드캐스트를 막는 성질이있습니다. 지원하지 않는 스위치는 멀티캐스트를 브로드캐스트마냥 모든 포트에게 전부 뿌려줍니다.)</p>			
 						 
-						  
-					
-				
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+	
 					</section>
 	
 	
@@ -239,17 +224,32 @@
 					    <br>참고로 네트워크 속도가 명시된 속도보다 늦은 이유는 바로 이 포장하는 일 때문입니다. 오리지널 데이터에 지나가는 계층마다 헤더에 포장을 하니
 					      데이터가 더 커지기 때문에 기대했던 네트워크 통신 속도가 나지 않는 것입니다.</p>
 						
-									
-				  
-				  
+							
+					</section>
+	
+	
+	
+	
+	<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h3>8. DHCP(Dynamic Host Configuration Protocol) 프로토콜 기본 원리</h3>D
+						</header>
+					<P>전화를 사용할 때 자신의 전화 번호가 있듯이 인터넷을 사용할 때도 인터넷 주소가 있어야하는데, 이 인터넷 주소가 IP이며, 이 IP주소는 한정적이기 때문에
+					무한한 자원이 아니다. 따라서 현재 통신을 하고있지 않은 PC로 부터 IP를 영원히 할당해 주지 않고 회수한다. 즉 사용하고 있지 않는 IP를 다시 회수하고, IP사용을 요청하는 PC에게
+					동적으로 그때그때 사용되지 않고 놀고있는 IP주소를 할당해 주는 방식의 프로토콜이라 할 수 있다.</P></br>
 					
+							<img alt="MacAddress" src="/resources/images/network/DHCP.gif" style="margin-bottom: 40px;">	
 					
-					
+							
 				
+		
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="http://www.netmanias.com/ko/post/blog/5348/dhcp-ip-allocation-network-protocol/understanding-the-basic-operations-of-dhcp" class="button">Learn More</a></li>
 						</ul>
 					</section>
+	
+	
 	
 	
 	<div class="row"></div>

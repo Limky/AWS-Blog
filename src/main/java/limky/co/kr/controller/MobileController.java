@@ -34,4 +34,14 @@ public class MobileController {
 		return "android";
 	}
 	
+	@RequestMapping(value = "/ios", method = RequestMethod.GET)
+	public String RequestIosController(Locale locale, Model model) {
+		logger.info("Welcome Andorid! The client locale is {}.", locale);
+		
+		System.out.println("/ios 컨트롤러");
+	
+		
+		return "ios";
+	}
+		
 }

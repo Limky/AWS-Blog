@@ -44,5 +44,28 @@ public class WebController {
 	}
 	
 
+	@RequestMapping(value = "/js-jquery", method = RequestMethod.GET)
+	public String RequestScriptController(Locale locale, Model model) {
+		logger.info("Welcome aws! The client locale is {}.", locale);
+		
+		System.out.println("/js-jquery 컨트롤러");
+	
+		
+		return "js-jquery";
+	}
+	
+	
+	@RequestMapping(value = "/node.js", method = RequestMethod.GET)
+	public String RequestNodeController(Locale locale, Model model) {
+		logger.info("Welcome aws! The client locale is {}.", locale);
+		
+		System.out.println("/node.js 컨트롤러");
+	
+		
+		return "node.js";
+	}
+	
+	
+	
 	
 }

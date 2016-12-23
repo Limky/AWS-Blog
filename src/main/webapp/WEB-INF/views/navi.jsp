@@ -6,10 +6,12 @@
 				<div class="inner">
 					<a href="/" class="image avatar"><img src="/resources/images/main/faceImage2.jpg" alt="" /></a>
 					<h1><strong>I am Limky</strong>&nbsp;<a href="https://github.com/Limky">My GitHub</a><br/>
-					<a href="android">Android</a> &nbsp;&nbsp;<a href="jsp">JSP</a>&nbsp;&nbsp;<a href="spring">Spring</a><br/>
+					<a href="android">Android</a>&nbsp;&nbsp;<a href="ios">ios</a>&nbsp;&nbsp;<a href="node.js">node</a><br/>
+					<a href="jsp">JSP</a>&nbsp;&nbsp;<a href="spring">Spring</a>&nbsp;&nbsp;<a href="js-jquery">js-jquery</a><br/>
 					<a href="mysql">MySQL</a>&nbsp;&nbsp;<a href="database">DataBase</a><br/>
 					 <a href="network">Network</a>&nbsp;&nbsp;<a href="os">OS</a>&nbsp;&nbsp;<a href="java">JAVA</a><br/>
-					  <a href="algorithm">Algorithm</a>&nbsp;&nbsp;<a href="linux">Linux</a>&nbsp;&nbsp;<a href="aws">Aws</a></h1>
+					  <a href="algorithm">Algorithm</a>&nbsp;&nbsp;<a href="linux">Linux</a>&nbsp;&nbsp;<a href="aws">Aws</a><br/>
+					  <a href="jenkins">jenkins</a></h1>
 				</div>
 			</header>
 
