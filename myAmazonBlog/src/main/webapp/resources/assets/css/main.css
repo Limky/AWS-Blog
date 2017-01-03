@@ -1583,8 +1583,7 @@
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
-		font-family: 'Jeju Gothic', HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif; font-weight:400; color:#fff;
+		font-family: 'Jeju Gothic', HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif; font-weight:400;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
