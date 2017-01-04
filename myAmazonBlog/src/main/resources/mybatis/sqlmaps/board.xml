@@ -6,10 +6,10 @@
 		SELECT * FROM blog.board_table WHERE subject = 'android'
 	</select>
 	
-		
+
 		
 	<insert id="insert" parameterType="com.spring.limky.model.Board">
-		INSERT INTO blog.board_table VALUES(#{date},#{title},#{subject},#{contents})
+		INSERT INTO blog.board_table VALUES(#{num},#{date},#{subject},#{title},#{contents})
 	</insert>
 	
 

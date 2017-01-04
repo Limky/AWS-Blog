@@ -25,6 +25,7 @@ public class InsertDaoImpl implements InsertDao{
 	@Override
 	public Boolean insertScrapDao(Board v) {
 		// TODO Auto-generated method stub
+		System.out.println(v.getContents());
 		sqlSession.insert("insert",v);
 		
 		return null;

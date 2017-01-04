@@ -52,7 +52,7 @@ public class CmsController {
 		board.setContents(request.getParameter("contents"));
 	
 
-		System.out.println(board.getContents());
+		System.out.println("Title:"+board.getTitle()+"\n Subject:"+board.getSubject()+"\n Contents:"+board.getContents());
 		
 		
 		insertService.insertScrapService(board);
