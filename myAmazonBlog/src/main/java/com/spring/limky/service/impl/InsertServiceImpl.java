@@ -1,5 +1,7 @@
 package com.spring.limky.service.impl;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -22,6 +24,11 @@ public class InsertServiceImpl implements InsertService {
     
 	@Override
 	public Boolean insertScrapService(Board scrap) {
+		long time = System.currentTimeMillis(); 
+		SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+		String str = dayTime.format(new Date(time));
+		scrap.setDate(str);
+		
 		insertDao.insertScrapDao(scrap);
 		// TODO Auto-generated method stub
 		return null;

@@ -46,7 +46,7 @@ public class CmsController {
 		logger.info("Welcome aws! The client locale is {}.", locale);
 		
 
-		board.setDate("2017-17-17-14:14");
+	//	board.setDate("2017-17-17-14:14");
 		board.setTitle(request.getParameter("title"));
 		board.setSubject(request.getParameter("subject"));
 		board.setContents(request.getParameter("contents"));
@@ -61,7 +61,7 @@ public class CmsController {
 		
 	
 		
-		return "ios";
+		return "cms";
 	}
 	
 

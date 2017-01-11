@@ -23,73 +23,21 @@
 <!-- One -->
 		<section id="one">
 			<header class="major">
-				<h3>${android.title}</h3>
+				<h3>${android.num}. ${android.title}</h3><p>${android.date}</p>
 			</header>
 			<p>${android.contents}
 			</p>
-			<img src="/resources/images/android/android_logo.jpg" alt=""
-				style="margin: 0 auto;" />
-
+			
+					<ul class="actions" style="margin-top:50px">
+						<li><input type="submit" value="Modify"/></li>
+					    <li><input type="submit" value="Modify"/></li>
+					</ul>
 		</section>
+		
 </c:forEach>
 
-	<!-- 
-		<section id="one">
-			<header class="major">
-				<h3>0. 안드로이드를 시작하며..</h3>
-			</header>
-			<p>
-				필자는 웹에 대한 개발과 공부를 먼저 시작했고, 안드로이드에 대해 개인적으로 늦게 관심을 가졌다고 생각한다. <br>따라서
-				안드로이드에 관한 깊은 내공이나, 전문적인 지식이 부족할 수 있다. 하지만 나름대로 안드로이드 실무 개발에 투입되면서 혼자
-				느끼고 삽질 했던 수 많은 시간과 사수로부터 배웠던 소중한 지식을 그냥 흘려두기 아까워 이렇게 스크랩하고자 한다. <br>
-				스크랩의 전체적인 내용은 안드로이드 개발을 처음 시작하는 초심자를 위한 수준의 글일 것이다.( 나도 초심자이기
-				때문에...^^ ) <br>아무튼 이 글로 인해 초심자들이 안드로이드가 더 재미있어지고, 더 즐겁게 개발 할 수
-				있으면 좋겠다.
-			</p>
-			<img src="/resources/images/android/android_logo.jpg" alt=""
-				style="margin: 0 auto;" />
 
-		</section> -->
-
-
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h3>1. 나만의 AAR/JAR 만들기</h3>
-			</header>
-			<p>
-				개발을 하다보면 누군가 만들어 놓은 라이브러리를 사용하는 것이 아닌 내가 직접 라이브러리를 만들어 사용할 일이 생긴다.<br />
-				따라서 안드로이드 스튜디오에서 내가 만든 프로젝트를 AAR로 만드는 방법을 소개한다.<br /> <a
-					href="http://flowarc.tistory.com/entry/Android-Studio%EC%97%90%EC%84%9C-%EB%82%98%EB%A7%8C%EC%9D%98-Library-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0">나만의
-					AAR 만들기 링크</a>
-			</p>
-			<br />
-			<h3>1-1. AAR파일 import 하기</h3>
-			<p>
-				이제 내가 만들었던 aar이든 누군가 만들었던 aar이든 aar 파일을 안드로이드 스튜디오에 import 하는 방법을
-				알아보자. <br />첫번째로 File -> Project Structure 에서 + 버튼을 누르면 ui상으로
-				import할 종류를 물어본다. aar/jar Package파일을 임포트하기가 보일것이다.<br />
-			</p>
-			<img style="margin-bottom: 20px" alt=""
-				src="/resources/images/android/aar_import_1.JPG"> <img
-				style="margin-bottom: 20px" width="900px" alt=""
-				src="/resources/images/android/aar_import_2.JPG"> <img
-				style="margin-bottom: 20px" width="900px" alt=""
-				src="/resources/images/android/aar_import_3.JPG">
-			<p>클릭하여 aar파일의 위치 경로를 잡아주고 aar파일명을 지어주자. 완료를 한다음 Project
-				Structure 창을 한번 껏다 키면, app프로젝트 아래목록에 내가 지어준 aar파일명이 보일것이다. 그럼 지금까지 잘
-				된 것이다.</p>
-			<img style="margin-bottom: 20px" width="900px" alt=""
-				src="/resources/images/android/aar_import_4.JPG">
-			<p>이제 자신의 app프로젝트에서 dependency 탭으로가서 + 버튼을 눌러 module을 import 시키면
-				모든 작업은 끝난다.</p>
-			<img style="margin-bottom: 20px" width="900px" alt=""
-				src="/resources/images/android/aar_import_5.JPG">
-
-			<p>모든 작업은 끝났다. 이제 aar파일에있는 클래스나,인스턴스 등을 마음껏 사용하면 된다!!
-		</section>
-
-
+	
 		<!-- One -->
 		<section id="one">
 			<header class="major">
