@@ -37,52 +37,6 @@
 </c:forEach>
 
 
-	
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h3>1-3. 하나의 안드로이드 프로젝트에 또 다른 안드로이드 프로젝트 import 시키기.(multi
-					import project)</h3>
-			</header>
-			<p>
-				하나의 안드로이드 프로젝트에서 또 다른 안드로이드 프로젝트를 동시작업 할 경우가 생긴다. 그래야하는 이유는 여러가지
-				이유가있는데. 예를들어 A라는 프로젝트에서 B라는 프로젝트를 참고해서 하나의 어플리케이션이 돌아가는 경우, 기본적으로
-				import 시킨 AAR파일은 수정할 수 없는 불편함을 극복하기 위해서이다. 여기서 2번째 경우를 덧붙이자면, AAR파일을
-				추출해서 내보낸 프로젝트가 만약 자신이 소유하고 있다면, 그 AAR 파일을 참고하는 하나의 안드로이드 프로젝트에
-				AAR파일이 아닌 AAR을 추출해내는 프로젝트를 직접 multi로 import 시켜 AAR파일을 직접 import 한
-				효과를 내면서 동시에 직접 aar프로젝트를 수정할 수 있는 구조가 되기때문에 aar을 한번 배포하고 aar을 참고하는
-				프로젝트에서 테스팅하고 문제가 발생해 또 aar을 수정해서 배포하고 또 임포트시켜서 테스트 하고 이런 멍청하고도 반복적인
-				일을 하지않고 aar을 참고하는 프로젝트에서 aar에 문제가 발생한 경우 바로 자신의 프로젝트내에서 aar 소스를 수정하여
-				즉각 반영을 통해 작업능률과 속도를 향상시킬 수 있다. 이렇게 작업을 다 하고 난 다음 최종적으로 aar을 한번만 뽑아내면
-				되는 것이다. 말이 좀 길었는데 이부분은 잘 알아두면 좋을것이다.<br />( 현업에 있다보면 하나의 안드로이드 프로젝트도
-				여러회사가 공동작업을 해야하는 사업이 존재하는데, 그럴 경우 A회사가 B회사에게 일부의 기능을 구현시킨
-				lib,jar,aar파일을 요구하기 aar프로젝트를 multi project로 임포트 시켜 직접 수정반영하는 구조로
-				작업하는 것은 굉장히 중요하다.)
-			</p>
-			<p>이번 파트에 서론이 길었는데, 이제 multi 임포트를 시키는 방법을 알아보자 너무 간단해서 놀랄것이다...</p>
-			<p>
-				<br />먼저 AAR프로젝트는 당연히 AAR를 추출할 수 있는 AAR 포멧으로 프로젝트가 되어있어야 하고,기본
-				프로젝트(aar 프로젝트를 넣을 프로젝트)에 setting.gradle에 가서 아래와 같이 aar 프로젝트의 경로를 명시해
-				준다. 여기서 AAR파을 경로,AAR파일명을 매핑할 매핑명 등이 있고, setting.gradle을 수정하면 위에 Sync
-				Now가 뜰텐데 수정한 수 반드시 Sync를 맞춰주자.
-			</p>
-
-			<img style="margin-bottom: 20px" alt=""
-				src="/resources/images/android/multi_import_1.JPG">
-
-			<p>이제 기본프로젝트에 build.gradle에 다음과 같이 compile project를 잡아주면 끝...(여기서
-				많은 어려움이 있었다면..AAR프로젝트의 앱 include도 별다른 작업을 하지 않았다면, 'app'으로 되어있을 텐데
-				이부분을 먼저 수정을 한 후 이 작업을 하길 바란다. 왜냐면 같은 이름의 app이 2개라면 2개의 프로젝트가 구분이되지않아
-				안드로이드 스튜디오에서 혼란을 가져다 주기때문이다.)</p>
-			<img style="margin-bottom: 20px" alt=""
-				src="/resources/images/android/multi_import_2.JPG">
-			<p>작업을 모두 성공적으로 완료했다면, AAR 프로젝트가 Link 되어서 프로젝트 구조목록에 생겼을 것이다....</p>
-			<img style="margin-bottom: 20px" alt=""
-				src="/resources/images/android/multi_import_3.JPG">
-		</section>
-
-
-
 
 		<!-- One -->
 		<section id="one">
