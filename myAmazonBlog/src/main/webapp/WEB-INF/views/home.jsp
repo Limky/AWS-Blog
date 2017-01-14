@@ -9,107 +9,98 @@
 <!-- 		<script src="/resources/assets/js/ie/html5shiv.js"></script> -->
 <link rel="stylesheet" href="/resources/assets/css/main.css" />
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
+
 	<jsp:include page="navi.jsp" flush="false" />
 
 
 	<!-- Main -->
 	<div id="main">
+		<h1 style="color: #004D40">#림키 개발 블로그<br>
+			<p>세상에서 가장 쓸데없고 해로운 말은 "그만하면 잘했어"야  -위플래쉬-</p></h1>
+	
+<div class="container">
+  <h2>최근 스크랩</h2>            
+  <table class="table">
+    <thead>
+      <tr>
+      
+        <th>Subject</th>
+        <th>Title</th>
+         <th>Updated Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+ <td><a>Moe</a></td>
+        <td><a>mary@example.com</a></td>
+        <td><p>2017-01-14</p></td>
+      </tr>
+      <tr> 
+    <td><a>Moe</a></td>
+        <td><a>mary@example.com</a></td>
+        <td><p>2017-01-14</p></td>
+      </tr>
+      <tr>
+        <td><a>Moe</a></td>
+        <td><a>mary@example.com</a></td>
+        <td><p>2017-01-14</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+		<!-- <img src="/resources/images/home/aboutme.jpg" alt=""
+			style="margin: 0 auto; width: 850px;height:450px" /> -->
 
-		<h1 style="color: #004D40">#림키 개발 블로그</h1>
-		
-	<img src="/resources/images/home/main.JPG" alt="" style="margin: 0 auto; width: 650px" />
-
-
-
-		<section id="one">
+		<section id="one" style="margin-top: -60px">
 			<header class="major">
-				<h2>#Contact</h2>
+				<h3>#About me</h3>
+
 			</header>
-			<h3>
+			<h4>#임경호 / 림키 / Limky / 개발자</h4>
+             <p>삽질 많이 하는 개발자. 잔 꾀도 많고 호기심 많은 개발자. <br/>
+             팀원과 소통하는 개발자. 디테일의 중요성을 아는 개발자. <br/>
+             세상이 필요로 하는 것을 개발하는 개발자.<br/>
+             왜 개발해야하는지 생각하는 개발자.
+			</p>
+			<h4 style="margin-top:30px">#좋아하는 것</h4>
+			<p>인문학 서적 탐독,평론가 평점 8점넘는 영화보기,무한도전,웹툰,운동(탁구,볼링,근력)<br/>
+			예술하는 친구들과 가십하기,코딩하기,음악감상,데이터수집하기</p>
+
+			<h4 style="margin-top:30px">#주로 쓰는 언어</h4>
+				<p>C,C++,JAVA(학부시절 배웠던 언어)<br/>
+				JAVA(주로 안드로이드 업무)<br/>
+				node,javaScript(취미)
+				</p>
+				
+			<h4 style="margin-top:30px">#요즘 하고있는 프로젝트</h4>
+			<p>● 평창올림픽 리모트 셀프 카메라 ( 간단히 설명하자면,원격으로 CCTV접속 및 캡춰링하는 앱 )<br/>
+			● 의왕현대 자동차 공정관리 태플릿 앱 유지보수건<br>
+			● 개인 블로그<a href="http://limky.me/"> ( www.limky.me )</a><br>
+			● 웹 크롤링해서 데이터 가져와서 장난치기 ( 취미 )</p>
+			
+			
+			
+			<h4 style="margin-top:30px">#Contact</h4>
+			<p>
 				Specification : <a style="color: #006064"
 					href="https://github.com/Limky/specification">github.com/Limky/specification</a>
-			</h3>
-			<h3>
-				Email : <a style="color: #006064"
-					href="#">Limky@sqisoft.com</a>
-			</h3>
+			</p>
+			<p>
+				Email : <a style="color: #006064" href="#">Limky@sqisoft.com</a>
+			</p>
 
-			<ul class="actions">
-				<li><a href="#" class="button">Learn More</a></li>
+			<ul class="actions" style="margin-top:30px">
+				<li><a href="https://github.com/Limky/specification" class="button">Learn More</a></li>
 			</ul>
+
 		</section>
 
 
-
-		<!-- Three -->
-		<section id="three">
-			<h2>Get In Touch</h2>
-			<p>Accumsan pellentesque commodo blandit enim arcu non at amet id
-				arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-				lorem vulputate lorem neque lorem ipsum dolor.</p>
-			<div class="row">
-				<div class="8u 12u$(small)">
-					<form method="post" action="#">
-						<div class="row uniform 50%">
-							<div class="6u 12u$(xsmall)">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Message"
-									rows="4"></textarea>
-							</div>
-						</div>
-					</form>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</div>
-				<div class="4u$ 12u$(small)">
-					<ul class="labeled-icons">
-						<li>
-							<h3 class="icon fa-home">
-								<span class="label">Address</span>
-							</h3> 1234 Somewhere Rd.<br /> Nashville, TN 00000<br /> United
-							States
-						</li>
-						<li>
-							<h3 class="icon fa-mobile">
-								<span class="label">Phone</span>
-							</h3> 000-000-0000
-						</li>
-						<li>
-							<h3 class="icon fa-envelope-o">
-								<span class="label">Email</span>
-							</h3> <a href="#">hello@untitled.tld</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span
-							class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="#" class="icon fa-dribbble"><span
-							class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span
-							class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+		<jsp:include page="footer.jsp" flush="false" />
 </body>
 </html>
