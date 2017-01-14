@@ -9,6 +9,10 @@
 <!-- 		<script src="/resources/assets/js/ie/html5shiv.js"></script> -->
 <link rel="stylesheet" href="/resources/assets/css/main.css" />
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
+
+
+
+
 </head>
 
 		<!-- Three -->
@@ -72,8 +76,12 @@
 							class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li>
+					<li>&copy; <a href="#" data-toggle="modal" data-target="#login-modal"> CMS</a></li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</footer>
+		
+		
+
+		

@@ -9,9 +9,6 @@
 <!-- 		<script src="/resources/assets/js/ie/html5shiv.js"></script> -->
 <link rel="stylesheet" href="/resources/assets/css/main.css" />
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
 
