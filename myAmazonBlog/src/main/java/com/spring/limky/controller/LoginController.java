@@ -8,10 +8,15 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.spring.limky.model.User;
+import com.spring.limky.service.InsertService;
+import com.spring.limky.service.LoginService;
 
 /**
  * Handles requests for the application home page.
@@ -19,7 +24,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 	
+	private User user = new User();
+	
 	private static final Logger logger = LoggerFactory.getLogger(ServerController.class);
+	
+	@Autowired
+    LoginService loginService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -32,7 +42,12 @@ public class LoginController {
 	
 		System.out.println(request.getParameter("userid"));
 		System.out.println(request.getParameter("password"));
-		return "algorithm";
+		user.setUserid(request.getParameter("userid"));
+		user.setPassword(request.getParameter("password"));
+		
+		loginService.getUser(user);
+		
+		return "home";
 	}
 	
 
