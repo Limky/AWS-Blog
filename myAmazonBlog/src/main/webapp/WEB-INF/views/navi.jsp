@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page session="true" %>
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%> 
 
 			<header id="header">
@@ -115,14 +115,21 @@
 }
 </style>
 
+<script>
+
+document.getElementById('pw').value = '';
+
+</script>
+
+
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Login to CMS</h1><br>
 				 <c:url var="addUrl" value="doLogin" />
-					<form method="post" action="${addUrl}" id="formLogin" runat="server"> 
+					<form method="post" action="${addUrl}" id="formLogin"> 
 					<input type="text" name="userid" placeholder="user">
-					<input type="password" name="password" placeholder="password">
+					<input type="password" name="password" placeholder="password" id="pw" value="">
 					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 				  </form>
 					

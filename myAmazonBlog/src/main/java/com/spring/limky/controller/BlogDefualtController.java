@@ -38,6 +38,8 @@ public class BlogDefualtController {
 		model.addAttribute("serverTime", formattedDate );
 		model.addAttribute("pageName","home");
 		
+		//최근글 3개 가져오기
+		
 		
 		return "home";
 	}

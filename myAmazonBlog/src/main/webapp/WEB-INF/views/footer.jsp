@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page session="false"%>
+<%@ page session="true"%>
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <html>
 <head>
@@ -75,10 +75,32 @@
 					<li><a href="#" class="icon fa-envelope-o"><span
 							class="label">Email</span></a></li>
 				</ul>
+				<%
+					String rcv = (String) session.getAttribute("loginCheck");
+					if (rcv == null) {
+				%>
+				
+				
 				<ul class="copyright">
-					<li>&copy; <a href="#" data-toggle="modal" data-target="#login-modal"> CMS</a></li>
+					<li>&copy; <a href="#" data-toggle="modal" data-target="#login-modal"> Login</a></li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
+				
+				<%
+				
+					}else{
+				
+				%>
+					<ul class="copyright">
+					<li>&copy; <a href="cms">CMS</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+				
+				
+				<% 
+					}
+				%>
+				
 			</div>
 		</footer>
 		

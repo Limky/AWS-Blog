@@ -30,13 +30,12 @@ public class LoginDaoImpl implements LoginDao{
 
 		if(user==null){
 			System.out.print(user);
-		return null;
+			return null;
 		
 		}else{
 			
-		System.out.print("Å×½ºÆ®"+user.getPassword());
-		
 		return user;
+		
 		}
 
 		

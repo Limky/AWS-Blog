@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,13 +33,22 @@ public class CmsController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/cms", method = RequestMethod.GET)
-	public String RequestAwsController(Locale locale, Model model) {
+	public String RequestAwsController(Locale locale,HttpSession session, Model model) {
 		logger.info("Welcome aws! The client locale is {}.", locale);
 		
 		System.out.println("/cms 컨트롤러");
 	
+		String success_id = (String)session.getAttribute("loginCheck");
+	
+		System.out.println("TEST:"+success_id);
+		if(success_id == null)return "home";
+	
+		if(success_id.equals("Limky_")){
+			return "cms";
+		}
 		
-		return "cms";
+		return "home";
+		
 	}
 	
 	@RequestMapping(value = "/insertscrap", method = RequestMethod.POST)

@@ -25,7 +25,12 @@ public class LoginServiceImpl implements LoginService {
 		// TODO Auto-generated method stub
 		User user = loginDao.getUser(u);
 		
-		return null;
+		if(user.getPassword().equals(u.getPassword())){	
+			return true;
+		}else{
+			return false;
+		}
+	
 	}
 
     

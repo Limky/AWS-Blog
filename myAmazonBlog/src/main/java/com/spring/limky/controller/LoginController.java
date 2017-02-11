@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +36,7 @@ public class LoginController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/doLogin", method = RequestMethod.POST)
-	public String LoginController(Locale locale, Model model,HttpServletRequest request) {
+	public String LoginController(Locale locale, HttpSession session ,Model model,HttpServletRequest request) {
 		logger.info("Welcome doLogin! The client locale is {}.", locale);
 		
 		System.out.println("/doLogin 컨트롤러");
@@ -45,9 +46,21 @@ public class LoginController {
 		user.setUserid(request.getParameter("userid"));
 		user.setPassword(request.getParameter("password"));
 		
-		loginService.getUser(user);
+		Boolean loginCheck = loginService.getUser(user);
 		
-		return "home";
+		if(loginCheck){
+			
+			String success_id = "Limky_";
+			session.setAttribute("loginCheck", success_id);
+			return "cms";
+			
+		}else{
+			
+			return "home";
+		}
+		
+		
+
 	}
 	
 
