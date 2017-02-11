@@ -13,5 +13,11 @@
 	</insert>
 	
 
+	<select id="getLatestRecordList" resultType="com.spring.limky.model.Board">
+		SELECT * FROM blog.board_table ORDER BY date DESC limit 3
+	</select>
+	
+
+
 
 </mapper>
