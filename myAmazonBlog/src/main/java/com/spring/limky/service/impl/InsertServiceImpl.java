@@ -30,11 +30,13 @@ public class InsertServiceImpl implements InsertService {
 //		String str = dayTime.format(new Date(time));
 //		scrap.setDate(str);
 //		
+//		System.out.println("½Ã°£ Test:"+str);
+		
 		Calendar calendar = Calendar.getInstance();
-        java.util.Date date = calendar.getTime();
-        String today = (new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").format(date));
-    	scrap.setDate(today);
-        
+     	 java.util.Date date = calendar.getTime();
+        String today = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date));
+        scrap.setDate(today);
+		System.out.println("New scrap updated at :"+today);
         insertDao.insertScrapDao(scrap);
 		
 		// TODO Auto-generated method stub

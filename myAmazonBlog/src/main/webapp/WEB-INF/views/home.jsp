@@ -19,7 +19,7 @@
 	<div id="main">
 		<h1 style="color: #004D40">
 			#림키 개발 블로그<br>
-			<p>세상에서 가장 쓸데없고 해로운 말은 "그만하면 잘했어"야 -위플래쉬-</p>
+			<p>자신을 높이는 사람은 낮아지고, 자신을 낮추는 사람은 높아질 것이다.</p>
 		</h1>
 
 		<section id="one" style="margin-top: -60px">
@@ -38,7 +38,9 @@
 					<c:forEach var="latestRecordList" items="${latestRecord}">
 						<tr>
 							<td><h5 style="color: #004D40">${latestRecordList.subject}</h5></td>
-							<td><a href="/">${latestRecordList.title}</a></td>
+							<td><a
+								href="${latestRecordList.subject}#${latestRecordList.num}"
+								style="font-size: 18px">${latestRecordList.title}</a></td>
 							<td><p>${latestRecordList.date}</p></td>
 						</tr>
 						<tr>
@@ -47,8 +49,8 @@
 				</tbody>
 			</table>
 		</section>
-		
-		
+
+
 		<!-- <img src="/resources/images/home/aboutme.jpg" alt=""
 			style="margin: 0 auto; width: 850px;height:450px" /> -->
 
@@ -77,9 +79,12 @@
 
 			<h4 style="margin-top: 30px">#요즘 하고있는 프로젝트</h4>
 			<p>
-				● 평창올림픽 리모트 셀프 카메라 ( 간단히 설명하자면,원격으로 CCTV접속 및 캡춰링하는 앱 )<br /> ● 의왕현대
-				자동차 공정관리 태플릿 앱 유지보수건<br> ● 개인 블로그<a href="http://limky.me/">
-					( www.limky.me )</a><br> ● 웹 크롤링해서 데이터 가져와서 장난치기 ( 취미 )
+				● 순창 미디어 아트 키넥트 물체 좌표 인식<br />
+				● 토니버거 자동결제 시스템 ( node, soket.io )<br />
+				● 평창올림픽 리모트 셀프 카메라 ( 간단히 설명하자면,원격으로 CCTV접속 및 캡춰링하는 앱 )<br />
+				● 현대 자동차 공정관리 태플릿 앱 유지보수건<br>
+				● 개인 블로그<a href="http://limky.me/">( www.limky.me )</a><br>
+				● 웹 크롤링해서 데이터 가져와서 장난치기 ( 취미 )
 			</p>
 
 

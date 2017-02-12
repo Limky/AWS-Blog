@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page session="false"%>
+<%@ page session="true"%>
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <html>
 <head>
@@ -21,20 +21,29 @@
 
 <c:forEach var="android" items="${mAndroid}">
 <!-- One -->
-		<section id="one">
-			<header class="major">
+
+
+		<section id="${android.num}" >
+	
+			<header>
 				<h3>${android.num}. ${android.title}</h3><p>${android.date}</p>
 			</header>
 			<p>${android.contents}
 			</p>
 			
+			<%
+
+				String rcv_nav = (String) session.getAttribute("loginCheck");
+				if(rcv_nav!=null){
+			%>
 					<ul class="actions" style="margin-top:50px; padding-left: 740px">
 						<li><input type="submit" value="Edit"/></li>
 					</ul>
+					
+			<% } %>
 		</section>
 		
 </c:forEach>
-
 
 		<jsp:include page="footer.jsp" flush="false" />
 
