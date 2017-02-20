@@ -6,6 +6,9 @@
 		SELECT * FROM blog.board_table WHERE subject = 'android'
 	</select>
 	
+	<select id="getList" parameterType="String" resultType="com.spring.limky.model.Board">
+		SELECT * FROM blog.board_table WHERE subject = #{subject}
+	</select>
 
 		
 	<insert id="insert" parameterType="com.spring.limky.model.Board">

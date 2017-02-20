@@ -91,5 +91,12 @@ public class BlogDaoImpl implements BlogDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<Board> getList(String subject) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.selectList("getList",subject);
+	}
  
 }

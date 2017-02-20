@@ -9,6 +9,8 @@ public interface BlogService {
     
     List<Book> getBookList();
 
+	List<Board> getList(String s);
+    
 	List<Board> getAndroidList();
 	
 	List<Board> getJspList();

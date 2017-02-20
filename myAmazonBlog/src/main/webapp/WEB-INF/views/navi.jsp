@@ -11,7 +11,7 @@
 					<a href="mysql">MySQL</a>&nbsp;&nbsp;<a href="database">DataBase</a><br/>
 					 <a href="network">Network</a>&nbsp;&nbsp;<a href="os">OS</a>&nbsp;&nbsp;<a href="java">JAVA</a><br/>
 					  <a href="algorithm">Algorithm</a>&nbsp;&nbsp;<a href="linux">Linux</a>&nbsp;&nbsp;<a href="aws">Aws</a><br/>
-					  <a href="jenkins">jenkins</a></h1>
+					  <a href="jenkins">jenkins</a>&nbsp;&nbsp;<a href="kinect">kinect</a></h1>
 				</div>
 			</header>
 

@@ -15,15 +15,15 @@ import com.spring.limky.service.BlogService;
 public class BlogServiceImpl implements BlogService {
      
     @Resource(name="blogDao")
-    private BlogDao bookDao;
+    private BlogDao blogDao;
  
     @Override
     public List<Book> getBookList() {
-        return bookDao.getBookList();
+        return blogDao.getBookList();
     }
     @Override
     public List<Board> getAndroidList() {
-        return bookDao.getAndroidList();
+        return blogDao.getAndroidList();
     }
     @Override
     public List<Board> getJspList() {
@@ -65,6 +65,12 @@ public class BlogServiceImpl implements BlogService {
     public List<Board> getAwsList() {
 		return null;
     }
+	@Override
+	public List<Board> getList(String s) {
+		// TODO Auto-generated method stub
+		
+		return blogDao.getList(s);
+	}
     
  
 }

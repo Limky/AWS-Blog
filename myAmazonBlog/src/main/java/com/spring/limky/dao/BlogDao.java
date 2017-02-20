@@ -8,7 +8,9 @@ import com.spring.limky.model.Book;
 public interface BlogDao {
     
     List<Book> getBookList();
- 
+    
+    List<Board> getList(String s);
+    
 	List<Board> getAndroidList();
 	
 	List<Board> getJspList();
