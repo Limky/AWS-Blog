@@ -52,7 +52,7 @@
 							</div>
 							<div class="12u$">
 					
-								<textarea class="testtext" onkeyup="resize(this)" name="contents"  placeholder="contents" rows="4">${modifiedBoard.contents}</textarea>
+								<textarea class="edittext" onkeyup="resize(this)" name="contents"  placeholder="contents" rows="4">${modifiedBoard.contents}</textarea>
 				
 							</div>
 						</div>
@@ -69,7 +69,7 @@
 		<script>
 	 window.onload = function() {
 
-		 $(".testtext").height( $("textarea")[0].scrollHeight );
+		 $(".testtext").height( $(".edittext")[0].scrollHeight );
     };
     
 		</script>
