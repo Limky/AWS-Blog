@@ -10,17 +10,17 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.spring.limky.dao.BlogDao;
-import com.spring.limky.dao.InsertDao;
+import com.spring.limky.dao.CmsDao;
 import com.spring.limky.model.Board;
 import com.spring.limky.model.Book;
 import com.spring.limky.service.BlogService;
-import com.spring.limky.service.InsertService;
+import com.spring.limky.service.CmsService;
  
-@Service("insetService")
-public class InsertServiceImpl implements InsertService {
+@Service("cmsService")
+public class CmsServiceImpl implements CmsService {
      
-    @Resource(name="insertDao")
-    private InsertDao insertDao;
+    @Resource(name="cmsDao")
+    private CmsDao cmsDao;
 
     
 	@Override
@@ -37,13 +37,29 @@ public class InsertServiceImpl implements InsertService {
         String today = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date));
         scrap.setDate(today);
 		System.out.println("New scrap updated at :"+today);
-        insertDao.insertScrapDao(scrap);
+		cmsDao.insertScrapDao(scrap);
 		
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubs
 		return null;
 		
 		
 		
+	}
+
+
+	@Override
+	public Board modifyScrapService(String num) {
+		// TODO Auto-generated method stub
+			
+		return  cmsDao.modifyScrapDao(num);
+	}
+
+
+	@Override
+	public Boolean updateBoardService(Board v) {
+		// TODO Auto-generated method stub
+		System.out.println(v.toString());
+		return cmsDao.updateBoardDao(v);
 	}
  
 

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.limky.model.User;
-import com.spring.limky.service.InsertService;
+import com.spring.limky.service.CmsService;
 import com.spring.limky.service.LoginService;
 
 /**

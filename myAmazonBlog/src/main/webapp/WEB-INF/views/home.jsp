@@ -37,10 +37,10 @@
 
 					<c:forEach var="latestRecordList" items="${latestRecord}">
 						<tr>
-							<td><h5 style="color: #004D40">${latestRecordList.subject}</h5></td>
+							<td><p style="color: #004D40; font-weight:bolder;">${latestRecordList.subject}</p></td>
 							<td><a
 								href="${latestRecordList.subject}#${latestRecordList.num}"
-								style="font-size: 18px">${latestRecordList.title}</a></td>
+								style="font-size: 15px">${latestRecordList.title}</a></td>
 							<td><p>${latestRecordList.date}</p></td>
 						</tr>
 						<tr>

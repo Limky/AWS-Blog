@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.spring.limky.dao.BlogDao;
-import com.spring.limky.dao.InsertDao;
+import com.spring.limky.dao.CmsDao;
 import com.spring.limky.model.Board;
 import com.spring.limky.model.Book;
 
-@Repository("insertDao")
-public class InsertDaoImpl implements InsertDao{
+@Repository("cmsDao")
+public class CmsDaoImpl implements CmsDao{
      
     @Autowired
     private SqlSession sqlSession;
@@ -29,6 +29,28 @@ public class InsertDaoImpl implements InsertDao{
 		sqlSession.insert("insert",v);
 		
 		return null;
+	}
+
+
+	@Override
+	public Board modifyScrapDao(String num) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.selectOne("selectOne",num);
+	}
+
+
+	@Override
+	public Boolean updateBoardDao(Board v) {
+		// TODO Auto-generated method stub	
+    	int modifidRowNum = sqlSession.update("updateBoard", v);
+		if(modifidRowNum > 0){			
+			return true;
+		
+		}else{		
+			return false;
+		}
+	 
 	}
 
 

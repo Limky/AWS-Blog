@@ -1,6 +1,7 @@
 package com.spring.limky.model;
 
 public class Board {
+
 	private int num;
 	private String date;
 	private String subject;
@@ -36,5 +37,11 @@ public class Board {
 	}
 	public void setContents(String contents) {
 		this.contents = contents;
+	}
+	
+	@Override
+	public String toString() {
+		return "Board [num=" + num + ", date=" + date + ", subject=" + subject + ", title=" + title + ", contents="
+				+ contents + "]";
 	}
 }

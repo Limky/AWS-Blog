@@ -21,6 +21,21 @@
 	</select>
 	
 
-
+	<select id="selectOne" parameterType="String" resultType="com.spring.limky.model.Board">
+		SELECT * FROM blog.board_table WHERE num = #{num}
+	</select>
+	
+			
+	<update id="updateBoard" parameterType="com.spring.limky.model.Board">
+		UPDATE blog.board_table 
+		SET num = #{num},
+			date = #{date},
+			subject = #{subject},
+			title = #{title},
+			contents = #{contents}
+		WHERE num = #{num}
+			
+	</update>
+	
 
 </mapper>

@@ -21,8 +21,8 @@
 
 <c:forEach var="android" items="${mAndroid}">
 <!-- One -->
-
-
+<c:url var="addUrl" value="modifyscrap" />
+<form method="post" action="${addUrl}" id="form1" runat="server">
 		<section id="${android.num}" >
 	
 			<header>
@@ -37,12 +37,17 @@
 				if(rcv_nav!=null){
 			%>
 					<ul class="actions" style="margin-top:50px; padding-left: 740px">
-						<li><input type="submit" value="Edit"/></li>
+					
+					<li>
+					<input type="hidden" value="${android.num}" name="pk" id="pk"/>
+					<input type="submit" value="edit"/></li>
+		
 					</ul>
 					
 			<% } %>
+			
 		</section>
-		
+</form>
 </c:forEach>
 
 		<jsp:include page="footer.jsp" flush="false" />
