@@ -11,23 +11,7 @@
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
 </head>
 <body id="top">
-	<jsp:include page="navi.jsp" flush="false" />
-
-<style>
-    .wrap {
-      width: 500px;
-    }
-    .wrap textarea {
-      width: 100%;
-      resize: none;
-      overflow-y: hidden; /* prevents scroll bar flash */
-      padding: 1.1em; /* prevents text jump on Enter keypress */
-      padding-bottom: 0.2em;
-      line-height: 1.6;
-    }
-    
-
-  </style>
+	<jsp:include page="header.jsp" flush="false" />
 
 
 
@@ -69,7 +53,7 @@
 		<script>
 	 window.onload = function() {
 
-		 $(".testtext").height( $(".edittext")[0].scrollHeight );
+		 $(".edittext").height( $(".edittext")[0].scrollHeight );
     };
     
 		</script>

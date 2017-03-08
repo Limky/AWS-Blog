@@ -2282,10 +2282,14 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2293,8 +2297,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2303,10 +2311,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2314,8 +2326,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2324,10 +2340,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2335,8 +2355,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2345,10 +2369,14 @@ transform
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2356,8 +2384,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2378,10 +2410,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2389,8 +2425,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2399,10 +2439,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2410,8 +2454,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2420,10 +2468,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2431,8 +2483,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2441,10 +2497,14 @@ transform
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2452,8 +2512,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2474,10 +2538,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2485,8 +2553,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2495,10 +2567,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2506,8 +2582,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2516,10 +2596,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2527,8 +2611,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2537,10 +2625,14 @@ transform
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2548,8 +2640,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2570,10 +2666,14 @@ keyframes spin { 0% {
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2581,8 +2681,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2591,10 +2695,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2602,8 +2710,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2612,10 +2724,14 @@ deg
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2623,8 +2739,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -2633,10 +2753,14 @@ transform
 
 
 
+
+
 :
 
 
+
  
+
 
 
 rotate
@@ -2644,8 +2768,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 );
@@ -3059,4 +3187,16 @@ body.is-touch .poptrox-popup .nav-next, body.is-touch .poptrox-popup .nav-previo
 		margin-left: 0;
 		padding-left: 0;
 	}
+	.wrap {
+		width: 500px;
+	}
+	.wrap textarea {
+		width: 100%;
+		resize: none;
+		overflow-y: hidden; /* prevents scroll bar flash */
+		padding: 1.1em; /* prevents text jump on Enter keypress */
+		padding-bottom: 0.2em;
+		line-height: 1.6;
+	}
+
 }

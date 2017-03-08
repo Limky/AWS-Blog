@@ -11,7 +11,7 @@
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
 </head>
 <body id="top">
-	<jsp:include page="navi.jsp" flush="false" />
+	<jsp:include page="header.jsp" flush="false" />
 
 
 	<!-- Main -->

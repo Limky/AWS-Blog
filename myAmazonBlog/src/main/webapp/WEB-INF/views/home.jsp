@@ -12,7 +12,7 @@
 </head>
 <body id="top">
 
-	<jsp:include page="navi.jsp" flush="false" />
+	<jsp:include page="header.jsp" flush="false" />
 
 
 	<!-- Main -->
@@ -39,7 +39,7 @@
 						<tr>
 							<td><p style="color: #004D40; font-weight:bolder;">${latestRecordList.subject}</p></td>
 							<td><a
-								href="${latestRecordList.subject}#${latestRecordList.num}"
+								href="scrap/${latestRecordList.subject}#${latestRecordList.num}"
 								style="font-size: 15px">${latestRecordList.title}</a></td>
 							<td><p>${latestRecordList.date}</p></td>
 						</tr>

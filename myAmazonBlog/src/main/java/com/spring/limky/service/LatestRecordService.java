@@ -2,9 +2,9 @@ package com.spring.limky.service;
 
 import java.util.List;
 
-import com.spring.limky.model.Board;
+import com.spring.limky.model.Scrap;
 
 public interface LatestRecordService {
 	
-	List<Board> getLatestRecordList();
+	List<Scrap> getLatestRecordList();
 }

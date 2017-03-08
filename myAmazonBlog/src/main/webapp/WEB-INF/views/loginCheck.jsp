@@ -11,7 +11,7 @@
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
 </head>
 <body id="top">
-	<jsp:include page="navi.jsp" flush="false" />
+	<jsp:include page="header.jsp" flush="false" />
 
 	<%
 		String rcv = (String) session.getAttribute("loginCheck");
@@ -22,7 +22,6 @@
 		} else {
 	%>
 
-	<jsp:include page="android.jsp" flush="false" />
 
 	<%
 		}

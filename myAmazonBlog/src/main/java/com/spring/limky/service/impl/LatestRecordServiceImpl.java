@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.spring.limky.dao.LatestRecordDao;
-import com.spring.limky.model.Board;
+import com.spring.limky.model.Scrap;
 import com.spring.limky.service.LatestRecordService;
 
 @Service("latestRecordService")
@@ -17,7 +17,7 @@ public class LatestRecordServiceImpl implements LatestRecordService {
     private LatestRecordDao latestRecordDao;
 		
 	@Override
-	public List<Board> getLatestRecordList() {
+	public List<Scrap> getLatestRecordList() {
 		// TODO Auto-generated method stub	
 		return latestRecordDao.getLatestRecordList();
 	}

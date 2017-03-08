@@ -1,6 +1,7 @@
 package com.spring.limky.service.impl;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -9,11 +10,8 @@ import javax.annotation.Resource;
  
 import org.springframework.stereotype.Service;
 
-import com.spring.limky.dao.BlogDao;
 import com.spring.limky.dao.CmsDao;
-import com.spring.limky.model.Board;
-import com.spring.limky.model.Book;
-import com.spring.limky.service.BlogService;
+import com.spring.limky.model.Scrap;
 import com.spring.limky.service.CmsService;
  
 @Service("cmsService")
@@ -22,16 +20,25 @@ public class CmsServiceImpl implements CmsService {
     @Resource(name="cmsDao")
     private CmsDao cmsDao;
 
+    private List<Scrap> scrapList = new ArrayList<Scrap>();
     
 	@Override
-	public Boolean insertScrapService(Board scrap) {
-//		long time = System.currentTimeMillis(); 
-//		SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-//		String str = dayTime.format(new Date(time));
-//		scrap.setDate(str);
-//		
-//		System.out.println("½Ã°£ Test:"+str);
+	public List<Scrap> getScrapListService(String s) {
+		// TODO Auto-generated method stub
 		
+    	scrapList = cmsDao.getScrapListDao(s);
+		if(scrapList != null){
+			return scrapList;
+		}else{
+			
+			return null;
+		}
+	}
+    
+    
+	@Override
+	public Boolean insertScrapService(Scrap scrap) {
+	
 		Calendar calendar = Calendar.getInstance();
      	 java.util.Date date = calendar.getTime();
         String today = (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date));
@@ -41,28 +48,25 @@ public class CmsServiceImpl implements CmsService {
 		
 		// TODO Auto-generated method stubs
 		return null;
-		
-		
-		
+			
 	}
 
 
 	@Override
-	public Board modifyScrapService(String num) {
+	public Scrap getModifidScrapService(String num) {
 		// TODO Auto-generated method stub
 			
-		return  cmsDao.modifyScrapDao(num);
+		return  cmsDao.getModifidScrapDao(num);
 	}
 
 
 	@Override
-	public Boolean updateBoardService(Board v) {
+	public Boolean updateScrapService(Scrap v) {
 		// TODO Auto-generated method stub
 		System.out.println(v.toString());
-		return cmsDao.updateBoardDao(v);
+		return cmsDao.updateScrapDao(v);
 	}
- 
 
- 
+
  
 }

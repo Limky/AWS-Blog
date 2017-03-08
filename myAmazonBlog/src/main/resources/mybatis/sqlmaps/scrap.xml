@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.limky">
+	<select id="getAndroidList" resultType="com.spring.limky.model.Scrap">
+		SELECT * FROM blog.Scrap_table WHERE subject = 'android'
+	</select>
+	
+	<select id="getList" parameterType="String" resultType="com.spring.limky.model.Scrap">
+		SELECT * FROM blog.Scrap_table WHERE subject = #{subject}
+	</select>
+
+		
+	<insert id="insert" parameterType="com.spring.limky.model.Scrap">
+		INSERT INTO blog.Scrap_table VALUES(#{num},#{date},#{subject},#{title},#{contents})
+	</insert>
+	
+
+	<select id="getLatestRecordList" resultType="com.spring.limky.model.Scrap">
+		SELECT * FROM blog.Scrap_table ORDER BY date DESC limit 3
+	</select>
+	
+
+	<select id="selectOne" parameterType="String" resultType="com.spring.limky.model.Scrap">
+		SELECT * FROM blog.Scrap_table WHERE num = #{num}
+	</select>
+	
+			
+	<update id="updateScrap" parameterType="com.spring.limky.model.Scrap">
+		UPDATE blog.Scrap_table 
+		SET num = #{num},
+			date = #{date},
+			subject = #{subject},
+			title = #{title},
+			contents = #{contents}
+		WHERE num = #{num}
+			
+	</update>
+	
+
+</mapper>

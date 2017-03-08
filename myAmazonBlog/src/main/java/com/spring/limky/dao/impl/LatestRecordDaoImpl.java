@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.spring.limky.dao.LatestRecordDao;
-import com.spring.limky.model.Board;
+import com.spring.limky.model.Scrap;
 
 @Repository("latestRecordDao")
 public class LatestRecordDaoImpl implements LatestRecordDao {
@@ -20,9 +20,9 @@ public class LatestRecordDaoImpl implements LatestRecordDao {
 	}
 
 	@Override
-	public List<Board> getLatestRecordList() {
+	public List<Scrap> getLatestRecordList() {
 		// TODO Auto-generated method stub
-		List<Board> latestRecord = sqlSession.selectList("getLatestRecordList");
+		List<Scrap> latestRecord = sqlSession.selectList("getLatestRecordList");
 		// System.out.println("TEST LATEST : ");
 
 		if (latestRecord != null) {

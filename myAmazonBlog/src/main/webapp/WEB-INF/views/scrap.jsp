@@ -11,24 +11,25 @@
 <!-- 		<link rel="stylesheet" href="/resources/assets/css/ie8.css" /> -->
 </head>
 <body id="top">
-	<jsp:include page="navi.jsp" flush="false" />
+	<jsp:include page="header.jsp" flush="false" />
 
 
 	<!-- Main -->
 	<div id="main">
 
-		<h1 style="color: #004D40">#키넥트 & C#</h1>
+		<h1 style="color: #004D40">#${subject}</h1>
 
-<c:forEach var="kinect" items="${mKinect}">
+<c:forEach var="scrap" items="${scrapList}">
 <!-- One -->
-
-
-		<section id="${kinect.num}" >
+<c:url var="addUrl" value="modifyscrap" />
+<form method="post" action="${addUrl}" id="form1" runat="server">
+		<hr>
+		<section id="${scrap.num}" >
 	
 			<header>
-				<h3>${kinect.num}. ${kinect.title}</h3><p>${kinect.date}</p>
+				<h3>${scrap.num}. ${scrap.title}</h3><p>${scrap.date}</p>
 			</header>
-			<p>${kinect.contents}
+			<p>${scrap.contents}
 			</p>
 			
 			<%
@@ -37,12 +38,17 @@
 				if(rcv_nav!=null){
 			%>
 					<ul class="actions" style="margin-top:50px; padding-left: 740px">
-						<li><input type="submit" value="Edit"/></li>
+					
+					<li>
+					<input type="hidden" value="${scrap.num}" name="pk" id="pk"/>
+					<input type="submit" value="edit"/></li>
+		
 					</ul>
 					
 			<% } %>
+			
 		</section>
-		
+</form>
 </c:forEach>
 
 		<jsp:include page="footer.jsp" flush="false" />

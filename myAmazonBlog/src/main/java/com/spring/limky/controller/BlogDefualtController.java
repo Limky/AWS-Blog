@@ -13,8 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.spring.limky.model.Board;
-import com.spring.limky.service.BlogService;
+import com.spring.limky.model.Scrap;
 import com.spring.limky.service.LatestRecordService;
 
  
@@ -25,9 +24,7 @@ public class BlogDefualtController {
      
 	private static final Logger logger = LoggerFactory.getLogger(BlogDefualtController.class);
 	
-    @Autowired
-    BlogService blogService;
-    
+
     @Autowired
     LatestRecordService latestRecordService;
     
@@ -44,7 +41,7 @@ public class BlogDefualtController {
 		model.addAttribute("pageName","home");
 		latestRecordService.getLatestRecordList();
 		//최근글 3개 가져오기
-		List<Board> latestRecord = latestRecordService.getLatestRecordList();
+		List<Scrap> latestRecord = latestRecordService.getLatestRecordList();
 		model.addAttribute("latestRecord",latestRecord);
 		
 		

@@ -27,7 +27,7 @@ public class LoginController {
 	
 	private User user = new User();
 	
-	private static final Logger logger = LoggerFactory.getLogger(ServerController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	@Autowired
     LoginService loginService;
@@ -36,10 +36,10 @@ public class LoginController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/doLogin", method = RequestMethod.POST)
-	public String LoginController(Locale locale, HttpSession session ,Model model,HttpServletRequest request) {
+	public String LoginController(Locale locale, HttpSession session ,HttpServletRequest request) {
 		logger.info("Welcome doLogin! The client locale is {}.", locale);
 		
-		System.out.println("/doLogin ÄÁÆ®·Ñ·¯");
+		System.out.println("/doLogin ì»¨íŠ¸ë¡¤ëŸ¬");
 	
 		System.out.println(request.getParameter("userid"));
 		System.out.println(request.getParameter("password"));

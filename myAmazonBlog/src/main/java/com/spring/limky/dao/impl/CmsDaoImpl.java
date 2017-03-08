@@ -1,29 +1,44 @@
 package com.spring.limky.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.spring.limky.dao.BlogDao;
+
 import com.spring.limky.dao.CmsDao;
-import com.spring.limky.model.Board;
-import com.spring.limky.model.Book;
+import com.spring.limky.model.Scrap;
+
 
 @Repository("cmsDao")
 public class CmsDaoImpl implements CmsDao{
      
     @Autowired
     private SqlSession sqlSession;
- 
+    private List<Scrap> scrapList = new ArrayList<Scrap>();
+    
     public void setSqlSession(SqlSession sqlSession){
         this.sqlSession = sqlSession;
     }
  
+	@Override
+	public List<Scrap> getScrapListDao(String subject) {
+		// TODO Auto-generated method stub
+		scrapList = sqlSession.selectList("getList",subject);
+		
+		if(scrapList != null){
+			return scrapList;
+		
+		}else{
+			return null;
+		}
+	}
+	
 
 	@Override
-	public Boolean insertScrapDao(Board v) {
+	public Boolean insertScrapDao(Scrap v) {
 		// TODO Auto-generated method stub
 		System.out.println(v.getContents());
 		sqlSession.insert("insert",v);
@@ -33,7 +48,7 @@ public class CmsDaoImpl implements CmsDao{
 
 
 	@Override
-	public Board modifyScrapDao(String num) {
+	public Scrap getModifidScrapDao(String num) {
 		// TODO Auto-generated method stub
 		
 		return sqlSession.selectOne("selectOne",num);
@@ -41,9 +56,9 @@ public class CmsDaoImpl implements CmsDao{
 
 
 	@Override
-	public Boolean updateBoardDao(Board v) {
+	public Boolean updateScrapDao(Scrap v) {
 		// TODO Auto-generated method stub	
-    	int modifidRowNum = sqlSession.update("updateBoard", v);
+    	int modifidRowNum = sqlSession.update("updateScrap", v);
 		if(modifidRowNum > 0){			
 			return true;
 		
@@ -52,6 +67,9 @@ public class CmsDaoImpl implements CmsDao{
 		}
 	 
 	}
+
+
+
 
 
  

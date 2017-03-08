@@ -1,6 +1,6 @@
 package com.spring.limky.model;
 
-public class Board {
+public class Scrap {
 
 	private int num;
 	private String date;
