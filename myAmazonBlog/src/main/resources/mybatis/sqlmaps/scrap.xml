@@ -37,5 +37,9 @@
 			
 	</update>
 	
+	<delete id="deleteScrap" parameterType="String">
+		DELETE FROM blog.Scrap_table WHERE num = #{num}
+	</delete>
+	
 
 </mapper>

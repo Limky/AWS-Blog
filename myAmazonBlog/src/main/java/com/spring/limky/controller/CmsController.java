@@ -119,8 +119,8 @@ public class CmsController {
 	
 	
 	
-	@RequestMapping(value = "/scrap/updateboard", method = RequestMethod.POST)
-	public String RequestUpdateBoardController(Locale locale, Model model, HttpServletRequest request) {
+	@RequestMapping(value = "/scrap/updatescrap", method = RequestMethod.POST)
+	public String RequestUpdateScrapController(Locale locale, Model model, HttpServletRequest request) {
 		logger.info("Welcome RequestModifyScrapController.", locale);
 
 
@@ -135,6 +135,18 @@ public class CmsController {
 		 cmsService.updateScrapService(scrapOne);
 
 		return "redirect:/"+"scrap/"+scrapOne.getSubject();
+	}
+	
+	
+	@RequestMapping(value = "/scrap/deletescrap", method = RequestMethod.POST)
+	public String RequestDeleteScrapController(Locale locale, Model model, HttpServletRequest request) {
+		logger.info("Welcome RequestModifyScrapController.", locale);
+
+		String subject = request.getParameter("subject");
+			System.out.println(subject+request.getParameter("pk"));
+		 cmsService.deleteScrapService(request.getParameter("pk"));
+
+		return "redirect:/"+"scrap/"+subject;
 	}
 	
 
