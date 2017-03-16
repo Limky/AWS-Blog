@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.spring.limky.model.Scrap;
 import com.spring.limky.service.LatestRecordService;
 
- 
 
- 
 @Controller
 public class BlogDefualtController {
      

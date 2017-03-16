@@ -8,8 +8,9 @@ import com.spring.limky.model.Scrap;
 public interface CmsDao {
     
    Boolean insertScrapDao(Scrap v);
-   Scrap getModifidScrapDao(String num);
+   Scrap getModifiedScrapDao(String num);
    Boolean updateScrapDao(Scrap v);
+   Boolean deleteScrapDao(String v);
    List<Scrap> getScrapListDao(String s);
 
 }

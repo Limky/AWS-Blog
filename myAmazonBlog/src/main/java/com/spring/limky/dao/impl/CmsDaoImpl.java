@@ -48,7 +48,7 @@ public class CmsDaoImpl implements CmsDao{
 
 
 	@Override
-	public Scrap getModifidScrapDao(String num) {
+	public Scrap getModifiedScrapDao(String num) {
 		// TODO Auto-generated method stub
 		
 		return sqlSession.selectOne("selectOne",num);
@@ -66,6 +66,20 @@ public class CmsDaoImpl implements CmsDao{
 			return false;
 		}
 	 
+	}
+
+	@Override
+	public Boolean deleteScrapDao(String v) {
+		// TODO Auto-generated method stub
+		System.out.println("»èÁ¦ÇÒ ³ğ:"+v);
+		 int modifidRowNum = sqlSession.delete("deleteScrap",v);
+		 if(modifidRowNum > 0){			
+				return true;
+			
+			}else{		
+				return false;
+			}
+		 
 	}
 
 

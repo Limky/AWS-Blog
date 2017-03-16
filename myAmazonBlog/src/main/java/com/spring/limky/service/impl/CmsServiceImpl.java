@@ -56,7 +56,7 @@ public class CmsServiceImpl implements CmsService {
 	public Scrap getModifidScrapService(String num) {
 		// TODO Auto-generated method stub
 			
-		return  cmsDao.getModifidScrapDao(num);
+		return  cmsDao.getModifiedScrapDao(num);
 	}
 
 
@@ -65,6 +65,13 @@ public class CmsServiceImpl implements CmsService {
 		// TODO Auto-generated method stub
 		System.out.println(v.toString());
 		return cmsDao.updateScrapDao(v);
+	}
+
+
+	@Override
+	public Boolean deleteScrapService(String s) {
+
+		return cmsDao.deleteScrapDao(s);
 	}
 
 
