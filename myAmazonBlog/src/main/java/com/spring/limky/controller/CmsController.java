@@ -84,6 +84,7 @@ public class CmsController {
 
 	//	board.setDate("2017-17-17-14:14");
 	//	scrapOne.setNum(1);
+		System.out.println(getCurrentTime());
 		scrapOne.setDate(getCurrentTime());
 		scrapOne.setTitle(request.getParameter("title"));
 		scrapOne.setSubject(request.getParameter("subject"));
@@ -108,7 +109,7 @@ public class CmsController {
 		logger.info("Welcome RequestModifyScrapController.", locale);
 
 		scrapOne = cmsService.getModifidScrapService(request.getParameter("pk"));
-		System.out.println("야미"+request.getParameter("pk"));
+	//	System.out.println("야미"+request.getParameter("pk"));
 		System.out.println(scrapOne.toString());
 			
 		model.addAttribute("modifiedBoard",scrapOne);
