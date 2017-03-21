@@ -14,19 +14,17 @@
 <body id="top">
 	<jsp:include page="header.jsp" flush="false" />
 
-	<%
-		String rcv = (String) session.getAttribute("loginCheck");
-		if (rcv == null) {
-	%>
-	<jsp:include page="home.jsp" flush="false" />
-	<%
-		} else {
-	%>
 
+	<!-- Main -->
+	<div id="main">
+	
 
-	<%
-		}
-	%>
+	<h1 style="color: #D50000">#404</h1>
+   <p>알 수 없는 페이지를 요청하였습니다.</p>
+				
 
+		<jsp:include page="footer.jsp" flush="false" />
+
+	</div>
 </body>
 </html>

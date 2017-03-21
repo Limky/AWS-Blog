@@ -37,17 +37,28 @@ public class CmsController {
 	private Scrap scrapOne = new Scrap();
 	private List<Scrap> scrapList = new ArrayList<Scrap>();
 	
-
+	
+	private String  subjectArray[]  = {"android","ios","node","jsp","spring","js-jquery","mysql","database","network","os","java","algorithm","linux","aws","jenkins","kinect" };
+	
+	
+	private String filteringURL(String subject){
+			for(int i=0;i<subjectArray.length;i++){
+				if(subjectArray[i].equals(subject))return subject;
+			}
+		
+		return null;
+	}
 	
 	@RequestMapping(value = "/scrap/{subject}", method = RequestMethod.GET)
 	public String RequestAndroidController(Locale locale, Model model,HttpServletRequest request,@PathVariable String subject) {
-		logger.info("Welcome Andorid! The client locale is {}.", locale);
 		
-
-		System.out.println("/android 컨트롤러 "+ subject);
+		String URL = filteringURL(subject);
+		logger.info("Welcome "+ URL +"! The client locale is {}.", locale);
+		System.out.println("컨트롤러 "+ URL);
+		if(URL == null)return "404";
+		
 		scrapList = cmsService.getScrapListService(subject);
-		
-		
+			
 		model.addAttribute("subject",request.getRequestURL().toString().split("/")[4]);
 		model.addAttribute("scrapList",scrapList);
 		
