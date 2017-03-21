@@ -90,10 +90,12 @@
 
 
 
-			<h4 style="margin-top: 30px">#Contact</h4>
+			<h4 style="margin-top: 30px">#Contact & Info</h4>
 			<p>
 				Specification : <a style="color: #006064"
-					href="https://github.com/Limky/specification">github.com/Limky/specification</a>
+					href="https://github.com/Limky/specification">github.com/Limky/specification</a><br/>
+				 Trello : <a style="color: #006064"
+					href="https://trello.com/limky91">https://trello.com/limky91</a>
 			</p>
 			<p>
 				Email : <a style="color: #006064" href="#">Limky@sqisoft.com</a>

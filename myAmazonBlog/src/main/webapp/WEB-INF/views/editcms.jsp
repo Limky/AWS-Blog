@@ -15,14 +15,25 @@
 	<jsp:include page="header.jsp" flush="false" />
 
 
+<script type="text/javascript">
+		function goDelete() {
+			frm.action = "deletescrap";
+			frm.method = "post";
+			confirm("정말로 삭제를 할까요 ??\n"
+					+ "제목 : " 
+					+ frm.title.value);
+			frm.submit();
+		}
+		
 
+</script>
 	<!-- Main -->
 	<div id="main">
 
 		<h1 style="color: #004D40">#스크랩 수정하기</h1>
 		<div class="row">
 			<c:url var="addUrl" value="updatescrap" />
-			<form method="post" action="${addUrl}" id="form1" runat="server">
+			<form method="post" action="${addUrl}" id="form1" runat="server" name="frm">
 				<div style="width: 1100px">
 
 					<div class="row uniform 50%">
@@ -46,7 +57,7 @@
 
 					<ul class="actions" style="margin-top: 30px">
 						<li><input type="submit" value="edit" /></li>
-						<li><input type="submit" value="delete" onclick="" /></li>
+						<li><input type="submit" value="delete" onclick="javascript:goDelete()" /></li>
 					</ul>
 				</div>
 				</form>

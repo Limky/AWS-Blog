@@ -152,7 +152,7 @@ public class CmsController {
 	
 	@RequestMapping(value = "/scrap/deletescrap", method = RequestMethod.POST)
 	public String RequestDeleteScrapController(Locale locale, Model model, HttpServletRequest request) {
-		logger.info("Welcome RequestModifyScrapController.", locale);
+		logger.info("Welcome RequestDeleteScrapController.", locale);
 
 		String subject = request.getParameter("subject");
 			System.out.println(subject+request.getParameter("pk"));
